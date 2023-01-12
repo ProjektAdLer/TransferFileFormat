@@ -1,0 +1,45 @@
+{
+  "fileVersion": "0.3",
+  "amgVersion": "1.0",
+  "author": "Peter",
+  "language": "de",
+  "world": {
+    "lmsElementIdentifier": {
+      "type": "idNumber",
+      "value": "123456789randomID"
+    },
+    "worldName": "Name der Welt",
+    "worldDescription": "Beschreibung der Welt",
+    "worldGoals": ["Ziel 1", "Ziel 2"],
+    "spaces": [
+      {
+        "spaceId": 1,
+        "lmsElementIdentifier": {
+          "type": "idNumber",
+          "value": "123456789randomID"
+        },
+        "spaceName": "Name des Lernraums",
+        "spaceDescription": "Beschreibung des Lernraums",
+        "spaceGoals": ["Ziel 1", "Ziel 2"],
+        "spaceContents": [1, 2, 3],
+        "requiredPointsToComplete": 100,
+        "requiredSpacesToEnter": "(5)v((7)^(4))"
+      }
+    ],
+    "elements": [
+      {
+        "elementId": 1,
+        "lmsElementIdentifier": {
+          "type": "moduleName",
+          "value": "Ein wunderschöner, für den Nutzer sichtbarer, String"
+        },
+        "elementName": "Name des Elements",
+        "elementDescription": "Beschreibung des Lernelements",
+        "elementGoals": ["Ziel 1", "Ziel 2"],
+        "elementCategory": "image",
+        "elementFileType": "image:png",
+        "elementPoints": 123
+      }
+    ]
+  }
+}
