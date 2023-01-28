@@ -139,7 +139,7 @@
               "elementFileType": {
                 "type": "string"
               },
-              "elementPoints": {
+              "elementMaxScore": {
                 "type": "integer"
               }
             },
@@ -148,7 +148,7 @@
               "lmsElementIdentifier",
               "elementCategory",
               "elementFileType",
-              "elementPoints",
+              "elementMaxScore",
               "elementName"
             ],
             "minItems": 1

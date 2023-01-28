@@ -38,7 +38,7 @@
         "elementGoals": ["Ziel 1", "Ziel 2"],
         "elementCategory": "image",
         "elementFileType": "image:png",
-        "elementPoints": 123
+        "elementMaxScore": 123
       }
     ]
   }

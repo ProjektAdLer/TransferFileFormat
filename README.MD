@@ -67,7 +67,7 @@ Die Namen von Schlüsseln, welche mehrere Werte (Arrays) beinhalten, sollen imme
 | elementGoals         | [string] | ziele des Lernelements                                                                       | Nein      |
 | elementCategory      | string   | Art des Lernelements (Bild, Text, H5P, etc)                                                  | Ja        |
 | elementFileType      | string   | genauer Content des Lernelements (im Falle Bild: Jpeg, PNG, ...)                             | Ja        |
-| elementPoints        | integer  | wie viele Punkte gibt das Element (maximal) gibt, wenn es abgeschlossen ist                  | Ja        |
+| elementMaxScore        | integer  | wie viele Punkte gibt das Element (maximal) gibt, wenn es abgeschlossen ist                  | Ja        |
 | elementName          | string   | Name des Elements                                                                            | Ja        |
 
 ### Beschreibung der Felder des Root Elements
@@ -164,5 +164,5 @@ Eine Beispielhafte Verknüpfung für einen Lernraum ist: `"requiredSpacesToEnter
 - `elementName` wird zwingen benötigt
 - `elementGoals` ist ein Array aus Strings
 - `elementType` heißt jetzt `elementFileType`
-- `learningElementValueList` heißt jetzt `elementPoints` und ist nur noch ein integer mit Punkten
+- `learningElementValueList` heißt jetzt `elementMaxScore` und ist nur noch ein integer mit Punkten
 - `learningspaceParentId` existiert nicht mehr
