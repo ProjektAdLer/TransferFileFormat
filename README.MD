@@ -44,6 +44,14 @@ Die Namen von Schlüsseln, welche mehrere Werte (Arrays) beinhalten, sollen imme
 | worldName            | string   | Name der Welt                                                                                | Ja        |
 | spaces            | [object]   | Array aus Spaces, welche in der Welt vorhanden sind                                                                                | Ja        |
 
+### BEschreibung der Felder des Topics
+
+| Schlüssel            | Datentyp | Funktion                                                                                     | benötigt? |
+| -------------------- | -------- | -------------------------------------------------------------------------------------------- | --------- |
+| topicId              | int      | Id des Topics                                                                                | Ja        |
+| topicName            | string   | Name des Topics                                                                              | Ja        |
+| topicContents        | [int]    | Array aus den Ids der Spaces, welche in dem Topic enthalten sind                             | Ja        |
+
 ### Beschreibung der Felder der Spaces
 
 | Schlüssel                | Datentyp                  | Funktion                                                                                                       | benötigt? |

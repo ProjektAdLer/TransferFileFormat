@@ -11,6 +11,13 @@
     "worldName": "Name der Welt",
     "worldDescription": "Beschreibung der Welt",
     "worldGoals": ["Ziel 1", "Ziel 2"],
+    "topics": [
+      {
+        "topicId": 1,
+        "topicName": "A",
+        "topicContents": [1, 2]
+      }
+    ],
     "spaces": [
       {
         "spaceId": 1,
