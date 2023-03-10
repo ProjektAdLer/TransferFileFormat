@@ -42,28 +42,31 @@ Die Namen von Schlüsseln, welche mehrere Werte (Arrays) beinhalten, sollen imme
 | worldDescription     | string   | Beschreibung der Lernwelt, welche dem Nutzer angezeigt wird                                  | Nein      |
 | worldGoals           | [string] | Einzelne Lernziele der Welt                                                                  | Nein      |
 | worldName            | string   | Name der Welt                                                                                | Ja        |
-| spaces            | [object]   | Array aus Spaces, welche in der Welt vorhanden sind                                                                                | Ja        |
+| spaces               | [object] | Array aus Spaces, welche in der Welt vorhanden sind                                          | Ja        |
 
-### BEschreibung der Felder des Topics
+### Beschreibung der Felder des Topics
 
-| Schlüssel            | Datentyp | Funktion                                                                                     | benötigt? |
-| -------------------- | -------- | -------------------------------------------------------------------------------------------- | --------- |
-| topicId              | int      | Id des Topics                                                                                | Ja        |
-| topicName            | string   | Name des Topics                                                                              | Ja        |
-| topicContents        | [int]    | Array aus den Ids der Spaces, welche in dem Topic enthalten sind                             | Ja        |
+| Schlüssel     | Datentyp | Funktion                                                         | benötigt? |
+| ------------- | -------- | ---------------------------------------------------------------- | --------- |
+| topicId       | int      | Id des Topics                                                    | Ja        |
+| topicName     | string   | Name des Topics                                                  | Ja        |
+| topicContents | [int]    | Array aus den Ids der Spaces, welche in dem Topic enthalten sind | Ja        |
 
 ### Beschreibung der Felder der Spaces
 
-| Schlüssel                | Datentyp                  | Funktion                                                                                                       | benötigt? |
-| ------------------------ | ------------------------- | -------------------------------------------------------------------------------------------------------------- | --------- |
-| lmsElementIdentifier     | objekt                    | Objekt, welches durch Angabe von Typ und Wert ein Elementen im LMS eindeutig bezeichnen kann                   | Ja        |
-| spaceContents            | [int]                     | ids der LernElemente, welche sich in dem Raum befinden                                                         | Ja        |
-| includedPoints           | int                       | Wie viele Punkte ein Raum Maximal abwerfen kann                                                                | Ja        |
-| requiredPointsToComplete | integer                   | Wie viele Punkte in einem Raum angesammelt werden müssen, damit er als abgeschlossen gilt                      | Ja        |
-| requiredSpacesToEnter    | string (boolsche Algebra) | Spaces mit UND und ODER verknüpft, welche die Bedingung zum öffnen des Space bilden (siehe beschreibung unten) | Ja        |
-| spaceName                | string                    | Name des Lernraumes                                                                                            | Ja        |
-| spaceDescription     | string   | Beschreibung des Spaces, welche dem Nutzer angezeigt wird                                  | Nein      |
-| spaceGoals           | [string] | Einzelne Lernziele des Spaces                                                                  | Nein      |
+| Schlüssel                | Datentyp                  | Funktion                                                                                                             | benötigt? |
+| ------------------------ | ------------------------- | -------------------------------------------------------------------------------------------------------------------- | --------- |
+| lmsElementIdentifier     | objekt                    | Objekt, welches durch Angabe von Typ und Wert ein Elementen im LMS eindeutig bezeichnen kann                         | Ja        |
+| spaceContents            | [int]                     | (deprecated ab version 0.4)ids der LernElemente, welche sich in dem Raum befinden                                    | Ja        |
+| includedPoints           | int                       | Wie viele Punkte ein Raum Maximal abwerfen kann                                                                      | Ja        |
+| requiredPointsToComplete | integer                   | Wie viele Punkte in einem Raum angesammelt werden müssen, damit er als abgeschlossen gilt                            | Ja        |
+| requiredSpacesToEnter    | string (boolsche Algebra) | Spaces mit UND und ODER verknüpft, welche die Bedingung zum öffnen des Space bilden (siehe beschreibung unten)       | Ja        |
+| spaceName                | string                    | Name des Lernraumes                                                                                                  | Ja        |
+| spaceDescription         | string                    | Beschreibung des Spaces, welche dem Nutzer angezeigt wird                                                            | Nein      |
+| spaceGoals               | [string]                  | Einzelne Lernziele des Spaces                                                                                        | Nein      |
+| spaceSlotContents        | [int]                     | Die Lernelemente, welche sich in dem Raum befinden mit deren Slot (repräsentiert durch den Array index(null = leer)) | Ja        |
+| roomTemplate             | string                    | Das Temapate, welches für das Modell des Raumes genutzt wird                                                         | Ja        |
+| roomTemplateStyle        | string                    | Der Style des Templates, welcher genutzt werden soll                                                                 | Ja        |
 
 ### Beschreibung der Felder des Elements
 
@@ -75,8 +78,9 @@ Die Namen von Schlüsseln, welche mehrere Werte (Arrays) beinhalten, sollen imme
 | elementGoals         | [string] | ziele des Lernelements                                                                       | Nein      |
 | elementCategory      | string   | Art des Lernelements (Bild, Text, H5P, etc)                                                  | Ja        |
 | elementFileType      | string   | genauer Content des Lernelements (im Falle Bild: Jpeg, PNG, ...)                             | Ja        |
-| elementMaxScore        | integer  | wie viele Punkte gibt das Element (maximal) gibt, wenn es abgeschlossen ist                  | Ja        |
+| elementMaxScore      | integer  | wie viele Punkte gibt das Element (maximal) gibt, wenn es abgeschlossen ist                  | Ja        |
 | elementName          | string   | Name des Elements                                                                            | Ja        |
+| elementModel         | string   | Modell, weklches zur Anzeige des Elements genutzt werden soll                                | Ja        |
 
 ### Beschreibung der Felder des Root Elements
 
@@ -121,7 +125,42 @@ Eine Beispielhafte Verknüpfung für einen Lernraum ist: `"requiredSpacesToEnter
 
 - "jpeg", "png", "mp4", "h5p" weitere bitte von AMG ergänzen
 
+### Raum Templates und deren Datentypen
+
+Nachfolgend sind die Templates aufgelistet, welche für die Darstellung der Räume genutzt werden können.
+In den Spalten "Template" befinden sich die möglichen Strings für das Feld **roomTemplate**.
+In den Spalten "Style" befinden sich die möglichen Strings für das Feld **roomTemplateStyle**.
+| Template | Style | Beschreibung |
+| ----------- | ------------ | ---------------------------------------- |
+| "Template1" | "Template1Style1" | |
+| | "Template1Style2" | |
+| | "Template1Style3" | |
+
+### Modelle für Lernelemente
+
+| Lernelement Typ | Modell        | Beschreibung |
+| --------------- | ------------- | ------------ |
+| "image"         | "imageModel1" |              |
+| "text"          | "textModel1"  |              |
+| "h5p"           | "h5pModel1"   |              |
+| "video"         | "videoModel1" |              |
+| "pdf"           | "pdfModel1"   |              |
+
 ## Changelog
+
+### Version 0.4
+
+In Version 0.4 werden Templates für Lernräume sowie für Lernelemente hinzugefügt.
+
+#### Änderungen am Space
+
+- **roomTemplate**: Das Template, welches für das Modell des Raumes genutzt wird
+- **roomTemplateStyle**: Der Style des Templates, welcher genutzt werden soll
+- **spaceSlotContents**: Die Lernelemente, welche sich in dem Raum befinden mit deren Slot (repräsentiert durch den Array index(null = leer))
+
+#### Änderungen am Element
+
+- **elementModel**: Das Modell, welches für das Lernelement genutzt wird
 
 # Diskussionspunkte
 
@@ -138,12 +177,15 @@ Eine Beispielhafte Verknüpfung für einen Lernraum ist: `"requiredSpacesToEnter
 - **"Learning" als prefix herausgestrichen** der übersicht halber wurde das Wort "Learning" weg rationalisiert
 
 # Breaking changes zu der undokumentierten Version
+
 ## Root Level
+
 - `fileVersion` wird zwingen benötigt
 - `learningWorld` heißt jetzt `world`
 - ``
 
 ## World
+
 - `idNumber` existiert nicht mehr
 - `identifier` heißt jetzt `lmsElementIdentifier` und hat andere werte
 - `worldName` ist zwingend notwendig
@@ -154,6 +196,7 @@ Eine Beispielhafte Verknüpfung für einen Lernraum ist: `"requiredSpacesToEnter
 - `learningSpaces` heißt jetzt `spaces`
 
 ## Space
+
 - `identifier` heißt jetzt `lmsElementIdentifier` und hat andere werte
 - `spaceName` wird jetzt zwingend benötigt
 - `description` und `goals` heißen jetzt `spaceDescription` und `spaceGoals`
@@ -164,7 +207,9 @@ Eine Beispielhafte Verknüpfung für einen Lernraum ist: `"requiredSpacesToEnter
 - `requirements` heißt jetzt `requiredSpacesToEnter`
 
 '
+
 ## Element
+
 - `id` heißt jetzt `elementId`
 - `identifier` heißt jetzt `lmsElementIdentifier` und hat andere werte
 - `url` gibts nicht mehr
