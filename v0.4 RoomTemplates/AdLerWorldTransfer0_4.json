@@ -4,11 +4,8 @@
   "author": "Peter",
   "language": "de",
   "world": {
-    "lmsElementIdentifier": {
-      "type": "idNumber",
-      "value": "123456789randomID"
-    },
     "worldName": "Name der Welt",
+    "worldUUID": "12345678-1234-1234-1234-123456789012",
     "worldDescription": "Beschreibung der Welt",
     "worldGoals": ["Ziel 1", "Ziel 2"],
     "topics": [
@@ -21,27 +18,21 @@
     "spaces": [
       {
         "spaceId": 1,
-        "lmsElementIdentifier": {
-          "type": "idNumber",
-          "value": "123456789randomID"
-        },
+        "spaceUUID": "12345678-1234-1234-1234-123456789012",
         "spaceName": "Name des Lernraums",
         "spaceDescription": "Beschreibung des Lernraums",
         "spaceGoals": ["Ziel 1", "Ziel 2"],
         "spaceSlotContents": [1, null, 2, 3, null, null],
         "requiredPointsToComplete": 100,
         "requiredSpacesToEnter": "(5)v((7)^(4))",
-        "roomTemplate": "rectangle2x3",
-        "roomTemplateStyle": "casino"
+        "spaceTemplate": "rectangle2x3",
+        "spaceTemplateStyle": "casino"
       }
     ],
     "elements": [
       {
         "elementId": 1,
-        "lmsElementIdentifier": {
-          "type": "moduleName",
-          "value": "Ein wunderschöner, für den Nutzer sichtbarer, String"
-        },
+        "elementUUID": "12345678-1234-1234-1234-123456789012",
         "elementName": "Name des Elements",
         "elementDescription": "Beschreibung des Lernelements",
         "elementGoals": ["Ziel 1", "Ziel 2"],

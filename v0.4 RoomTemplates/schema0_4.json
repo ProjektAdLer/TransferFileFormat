@@ -18,19 +18,10 @@
     "world": {
       "type": "object",
       "properties": {
-        "lmsElementIdentifier": {
-          "type": "object",
-          "properties": {
-            "type": {
-              "type": "string"
-            },
-            "value": {
-              "type": "string"
-            }
-          },
-          "required": ["type", "value"]
-        },
         "worldName": {
+          "type": "string"
+        },
+        "worldUUID": {
           "type": "string"
         },
         "worldDescription": {
@@ -71,17 +62,8 @@
               "spaceId": {
                 "type": "integer"
               },
-              "lmsElementIdentifier": {
-                "type": "object",
-                "properties": {
-                  "type": {
-                    "type": "string"
-                  },
-                  "value": {
-                    "type": "string"
-                  }
-                },
-                "required": ["type", "value"]
+              "spaceUUID": {
+                "type": "string"
               },
               "spaceName": {
                 "type": "string"
@@ -116,23 +98,23 @@
               "requiredSpacesToEnter": {
                 "type": "string"
               },
-              "roomTemplate": {
+              "spaceTemplate": {
                 "type": "string"
               },
-              "roomTemplateStyle": {
+              "spaceTemplateStyle": {
                 "type": "string"
               }
             },
             "required": [
               "spaceId",
-              "lmsElementIdentifier",
               "spaceDescription",
               "spaceGoals",
               "spaceSlotContents",
               "requiredSpacesToEnter",
               "spaceName",
-              "roomTemplate",
-              "roomTemplateStyle"
+              "spaceTemplate",
+              "spaceTemplateStyle",
+              "spaceUUID"
             ]
           },
           "minItems": 1
@@ -145,17 +127,8 @@
               "elementId": {
                 "type": "integer"
               },
-              "lmsElementIdentifier": {
-                "type": "object",
-                "properties": {
-                  "type": {
-                    "type": "string"
-                  },
-                  "value": {
-                    "type": "string"
-                  }
-                },
-                "required": ["type", "value"]
+              "elementUUID": {
+                "type": "string"
               },
               "elementName": {
                 "type": "string"
@@ -184,18 +157,18 @@
             },
             "required": [
               "elementId",
-              "lmsElementIdentifier",
               "elementCategory",
               "elementFileType",
               "elementMaxScore",
               "elementName",
-              "elementModel"
+              "elementModel",
+              "elementUUID"
             ],
             "minItems": 1
           }
         }
       },
-      "required": ["lmsElementIdentifier", "spaces", "elements", "worldName"]
+      "required": ["spaces", "elements", "worldName", "worldUUID"]
     }
   },
   "required": ["fileVersion", "world"]
