@@ -43,6 +43,7 @@ Die Namen von Schlüsseln, welche mehrere Werte (Arrays) beinhalten, sollen imme
 | worldGoals           | [string] | Einzelne Lernziele der Welt                                                                  | Nein      |
 | worldName            | string   | Name der Welt                                                                                | Ja        |
 | spaces               | [object] | Array aus Spaces, welche in der Welt vorhanden sind                                          | Ja        |
+| evaluationLink       | string   | Link für einen Evaluations-Link, sollte dieser in der Engine angezeigt werden                | Nein      |
 
 ### Beschreibung der Felder des Topics
 
@@ -175,6 +176,10 @@ In Version 0.4 werden Templates für Lernräume sowie für Lernelemente hinzugef
 - **Autor und Language** Da es im AMG ohnehin eingegeben wird, schlage ich vor, das direkt auch mitzuliefern. Es wurde sich auch überlegt, den moodle Autor dafür zu nutzen, allerdings kann es auch ein anderer sein, der das Backup auf Moodle hochlädt.
 - **namen für alle elemente** Es wurden Namen für alle Elemente hinzugefügt (World, Space, Element)
 - **"Learning" als prefix herausgestrichen** der übersicht halber wurde das Wort "Learning" weg rationalisiert
+
+## Version 0.5
+### Änderungen an der Lernwelt
+ - **evaluationLink**Ein Optionales Feld für einen Evaluationslink für eine Lernwelt wurde hinzugefügt
 
 # Breaking changes zu der undokumentierten Version
 
