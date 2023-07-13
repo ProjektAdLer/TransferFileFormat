@@ -4,7 +4,7 @@
   "properties": {
     "fileVersion": {
       "type": "string",
-      "enum": ["0.5"]
+      "enum": ["0.5" ,"0.4"]
     },
     "amgVersion": { "type": "string" },
     "author": { "type": "string" },
