@@ -148,6 +148,13 @@ In den Spalten "Style" befinden sich die möglichen Strings für das Feld **room
 | "pdf"           | "pdfModel1"   |              |
 
 ## Changelog
+## Version 0.6
+### Changes to the Element
+ - The `elementCategory` field in the JSON Schema now has an `"enum"` constraint. It only allows the following values: "h5p", "h5p-primitive", "text", "image", "video", "pdf".
+
+## Version 0.5
+### Changes to the World
+ - **evaluationLink** An optional field for an evaluation link for a learning world has been added
 
 ### Version 0.4
 
@@ -177,18 +184,11 @@ In Version 0.4 werden Templates für Lernräume sowie für Lernelemente hinzugef
 - **namen für alle elemente** Es wurden Namen für alle Elemente hinzugefügt (World, Space, Element)
 - **"Learning" als prefix herausgestrichen** der übersicht halber wurde das Wort "Learning" weg rationalisiert
 
-## Version 0.5
-### Änderungen an der Lernwelt
- - **evaluationLink**Ein Optionales Feld für einen Evaluationslink für eine Lernwelt wurde hinzugefügt
-
 # Breaking changes zu der undokumentierten Version
-
 ## Root Level
 
 - `fileVersion` wird zwingen benötigt
 - `learningWorld` heißt jetzt `world`
-- ``
-
 ## World
 
 - `idNumber` existiert nicht mehr
@@ -199,7 +199,6 @@ In Version 0.4 werden Templates für Lernräume sowie für Lernelemente hinzugef
 - `topics` existiert nicht mehr
 - `learningWorldContent` existiert nicht mehr
 - `learningSpaces` heißt jetzt `spaces`
-
 ## Space
 
 - `identifier` heißt jetzt `lmsElementIdentifier` und hat andere werte
@@ -211,7 +210,6 @@ In Version 0.4 werden Templates für Lernräume sowie für Lernelemente hinzugef
 - `requiredPoints` heißt jetzt `requiredPointsToComplete`
 - `requirements` heißt jetzt `requiredSpacesToEnter`
 
-'
 
 ## Element
 

@@ -1,0 +1,66 @@
+{
+    "fileVersion": "0.6",
+    "amgVersion": "1.0",
+    "author": "Peter",
+    "language": "de",
+    "world": {
+        "worldName": "Name der Welt",
+        "worldUUID": "12345678-1234-1234-1234-123456789012",
+        "worldDescription": "Beschreibung der Welt",
+        "worldGoals": [
+            "Ziel 1",
+            "Ziel 2"
+        ],
+        "evaluationLink": "http://example.com",
+        "topics": [
+            {
+                "topicId": 1,
+                "topicName": "A",
+                "topicContents": [
+                    1,
+                    2
+                ]
+            }
+        ],
+        "spaces": [
+            {
+                "spaceId": 1,
+                "spaceUUID": "12345678-1234-1234-1234-123456789012",
+                "spaceName": "Name des Lernraums",
+                "spaceDescription": "Beschreibung des Lernraums",
+                "spaceGoals": [
+                    "Ziel 1",
+                    "Ziel 2"
+                ],
+                "spaceSlotContents": [
+                    1,
+                    null,
+                    2,
+                    3,
+                    null,
+                    null
+                ],
+                "requiredPointsToComplete": 100,
+                "requiredSpacesToEnter": "(5)v((7)^(4))",
+                "spaceTemplate": "rectangle2x3",
+                "spaceTemplateStyle": "casino"
+            }
+        ],
+        "elements": [
+            {
+                "elementId": 1,
+                "elementUUID": "12345678-1234-1234-1234-123456789012",
+                "elementName": "Name des Elements",
+                "elementDescription": "Beschreibung des Lernelements",
+                "elementGoals": [
+                    "Ziel 1",
+                    "Ziel 2"
+                ],
+                "elementCategory": "image",
+                "elementFileType": "image:png",
+                "elementMaxScore": 123,
+                "elementModel": "ArcadeMachine"
+            }
+        ]
+    }
+}
