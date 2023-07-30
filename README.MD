@@ -2,6 +2,11 @@
 
 Das Dateiformat dient zum Austausch von Daten zwischen den 3 AdLer-Komponenten AMG, Backend und 3D-Frontend.
 
+## Visualisierung
+
+![Visualisierung des AWT-Formats](./Diagram.png)
+Die Visualisierung stellt die Version 0.6 des AWT-Formats dar.
+
 ## Datenstruktur
 
 Die Struktur der gesamten Lernwelt sowie übergeordneten Metadaten wird über ein einzigen JSON-Objekt abgebildet.
