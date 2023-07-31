@@ -1,1 +1,190 @@
-<?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="652px" preserveAspectRatio="none" style="width:726px;height:652px;background:#FFFFFF;" version="1.1" viewBox="0 0 726 652" width="726px" zoomAndPan="magnify"><defs/><g><!--class OBJECT--><g id="elem_OBJECT"><rect codeLine="1" fill="#F1F1F1" height="129.4844" id="OBJECT" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="146" x="281" y="7"/><ellipse cx="323.9" cy="23" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M326.8688,28.6406 Q326.2906,28.9375 325.65,29.0781 Q325.0094,29.2344 324.3063,29.2344 Q321.8063,29.2344 320.4781,27.5938 Q319.1656,25.9375 319.1656,22.8125 Q319.1656,19.6875 320.4781,18.0313 Q321.8063,16.375 324.3063,16.375 Q325.0094,16.375 325.65,16.5313 Q326.3063,16.6875 326.8688,16.9844 L326.8688,19.7031 Q326.2438,19.125 325.65,18.8594 Q325.0563,18.5781 324.4313,18.5781 Q323.0875,18.5781 322.4,19.6563 Q321.7125,20.7188 321.7125,22.8125 Q321.7125,24.9063 322.4,25.9844 Q323.0875,27.0469 324.4313,27.0469 Q325.0563,27.0469 325.65,26.7813 Q326.2438,26.5 326.8688,25.9219 L326.8688,28.6406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="52" x="344.1" y="27.8467">OBJECT</text><line style="stroke:#181818;stroke-width:0.5;" x1="282" x2="426" y1="39" y2="39"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="123" x="287" y="55.9951">fileVersion : string</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="134" x="287" y="72.292">amgVersion : string</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="97" x="287" y="88.5889">author : string</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="116" x="287" y="104.8857">language : string</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="102" x="287" y="121.1826">world : WORLD</text><line style="stroke:#181818;stroke-width:0.5;" x1="282" x2="426" y1="128.4844" y2="128.4844"/></g><!--class WORLD--><g id="elem_WORLD"><rect codeLine="8" fill="#F1F1F1" height="178.375" id="WORLD" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="180" x="264" y="196.49"/><ellipse cx="323.75" cy="212.49" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M326.7188,218.1306 Q326.1406,218.4275 325.5,218.5681 Q324.8594,218.7244 324.1563,218.7244 Q321.6563,218.7244 320.3281,217.0838 Q319.0156,215.4275 319.0156,212.3025 Q319.0156,209.1775 320.3281,207.5213 Q321.6563,205.865 324.1563,205.865 Q324.8594,205.865 325.5,206.0213 Q326.1563,206.1775 326.7188,206.4744 L326.7188,209.1931 Q326.0938,208.615 325.5,208.3494 Q324.9063,208.0681 324.2813,208.0681 Q322.9375,208.0681 322.25,209.1463 Q321.5625,210.2088 321.5625,212.3025 Q321.5625,214.3963 322.25,215.4744 Q322.9375,216.5369 324.2813,216.5369 Q324.9063,216.5369 325.5,216.2713 Q326.0938,215.99 326.7188,215.4119 L326.7188,218.1306 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="52" x="344.25" y="217.3367">WORLD</text><line style="stroke:#181818;stroke-width:0.5;" x1="265" x2="443" y1="228.49" y2="228.49"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="129" x="270" y="245.4851">worldName : string</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="123" x="270" y="261.782">worldUUID : string</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="168" x="270" y="278.0789">worldDescription : string</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="138" x="270" y="294.3757">worldGoals : string[]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="116" x="270" y="310.6726">topics : TOPICS[]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="128" x="270" y="326.9695">spaces : SPACES[]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="162" x="270" y="343.2664">elements : ELEMENTS[]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="149" x="270" y="359.5632">evaluationLink : string</text><line style="stroke:#181818;stroke-width:0.5;" x1="265" x2="443" y1="366.865" y2="366.865"/></g><!--class TOPICS--><g id="elem_TOPICS"><rect codeLine="18" fill="#F1F1F1" height="96.8906" id="TOPICS" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="182" x="7" y="491.9"/><ellipse cx="68.25" cy="507.9" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M71.2188,513.5406 Q70.6406,513.8375 70,513.9781 Q69.3594,514.1344 68.6563,514.1344 Q66.1563,514.1344 64.8281,512.4938 Q63.5156,510.8375 63.5156,507.7125 Q63.5156,504.5875 64.8281,502.9313 Q66.1563,501.275 68.6563,501.275 Q69.3594,501.275 70,501.4313 Q70.6563,501.5875 71.2188,501.8844 L71.2188,504.6031 Q70.5938,504.025 70,503.7594 Q69.4063,503.4781 68.7813,503.4781 Q67.4375,503.4781 66.75,504.5563 Q66.0625,505.6188 66.0625,507.7125 Q66.0625,509.8063 66.75,510.8844 Q67.4375,511.9469 68.7813,511.9469 Q69.4063,511.9469 70,511.6813 Q70.5938,511.4 71.2188,510.8219 L71.2188,513.5406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="51" x="88.75" y="512.7467">TOPICS</text><line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="188" y1="523.9" y2="523.9"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="108" x="13" y="540.8951">topicId : integer</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="126" x="13" y="557.192">topicName : string</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="170" x="13" y="573.4889">topicContents : integer[]</text><line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="188" y1="580.7906" y2="580.7906"/></g><!--class SPACES--><g id="elem_SPACES"><rect codeLine="23" fill="#F1F1F1" height="210.9688" id="SPACES" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="260" x="224" y="434.86"/><ellipse cx="322.25" cy="450.86" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M325.2188,456.5006 Q324.6406,456.7975 324,456.9381 Q323.3594,457.0944 322.6563,457.0944 Q320.1563,457.0944 318.8281,455.4538 Q317.5156,453.7975 317.5156,450.6725 Q317.5156,447.5475 318.8281,445.8913 Q320.1563,444.235 322.6563,444.235 Q323.3594,444.235 324,444.3913 Q324.6563,444.5475 325.2188,444.8444 L325.2188,447.5631 Q324.5938,446.985 324,446.7194 Q323.4063,446.4381 322.7813,446.4381 Q321.4375,446.4381 320.75,447.5163 Q320.0625,448.5788 320.0625,450.6725 Q320.0625,452.7663 320.75,453.8444 Q321.4375,454.9069 322.7813,454.9069 Q323.4063,454.9069 324,454.6413 Q324.5938,454.36 325.2188,453.7819 L325.2188,456.5006 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="55" x="342.75" y="455.7067">SPACES</text><line style="stroke:#181818;stroke-width:0.5;" x1="225" x2="483" y1="466.86" y2="466.86"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="116" x="230" y="483.8551">spaceId : integer</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="128" x="230" y="500.152">spaceUUID : string</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="134" x="230" y="516.4489">spaceName : string</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="173" x="230" y="532.7457">spaceDescription : string</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="143" x="230" y="549.0426">spaceGoals : string[]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="204" x="230" y="565.3395">spaceSlotContents : integer[]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="248" x="230" y="581.6364">requiredPointsToComplete : integer</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="216" x="230" y="597.9332">requiredSpacesToEnter : string</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="159" x="230" y="614.2301">spaceTemplate : string</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="192" x="230" y="630.527">spaceTemplateStyle : string</text><line style="stroke:#181818;stroke-width:0.5;" x1="225" x2="483" y1="637.8288" y2="637.8288"/></g><!--class ELEMENTS--><g id="elem_ELEMENTS"><rect codeLine="35" fill="#F1F1F1" height="194.6719" id="ELEMENTS" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="200" x="519" y="443.01"/><ellipse cx="577.75" cy="459.01" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M580.7188,464.6506 Q580.1406,464.9475 579.5,465.0881 Q578.8594,465.2444 578.1563,465.2444 Q575.6563,465.2444 574.3281,463.6038 Q573.0156,461.9475 573.0156,458.8225 Q573.0156,455.6975 574.3281,454.0413 Q575.6563,452.385 578.1563,452.385 Q578.8594,452.385 579.5,452.5413 Q580.1563,452.6975 580.7188,452.9944 L580.7188,455.7131 Q580.0938,455.135 579.5,454.8694 Q578.9063,454.5881 578.2813,454.5881 Q576.9375,454.5881 576.25,455.6663 Q575.5625,456.7288 575.5625,458.8225 Q575.5625,460.9163 576.25,461.9944 Q576.9375,463.0569 578.2813,463.0569 Q578.9063,463.0569 579.5,462.7913 Q580.0938,462.51 580.7188,461.9319 L580.7188,464.6506 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="74" x="598.25" y="463.8567">ELEMENTS</text><line style="stroke:#181818;stroke-width:0.5;" x1="520" x2="718" y1="475.01" y2="475.01"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="131" x="525" y="492.0051">elementId : integer</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="143" x="525" y="508.302">elementUUID : string</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="149" x="525" y="524.5989">elementName : string</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="188" x="525" y="540.8957">elementDescription : string</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="158" x="525" y="557.1926">elementGoals : string[]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="171" x="525" y="573.4895">elementCategory : string</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="166" x="525" y="589.7864">elementFileType : string</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="186" x="525" y="606.0832">elementMaxScore : integer</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="151" x="525" y="622.3801">elementModel : string</text><line style="stroke:#181818;stroke-width:0.5;" x1="520" x2="718" y1="629.6819" y2="629.6819"/></g><!--link OBJECT to WORLD--><g id="link_OBJECT_WORLD"><path codeLine="46" d="M354,136.91 C354,155.54 354,176.24 354,196.1 " fill="none" id="OBJECT-WORLD" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="345.5875" y="156.4776">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="345.6813" y="185.4363">1</text></g><!--link WORLD to TOPICS--><g id="link_WORLD_TOPICS"><path codeLine="47" d="M264.46,375.05 C224.81,414.18 179.73,458.68 146.49,491.48 " fill="none" id="WORLD-TOPICS" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="249.006" y="394.8417">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="7" x="145.5355" y="480.9817">*</text></g><!--link WORLD to SPACES--><g id="link_WORLD_SPACES"><path codeLine="48" d="M354,375.05 C354,394.26 354,414.76 354,434.54 " fill="none" id="WORLD-SPACES" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="345.6813" y="394.8417">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="7" x="346.7539" y="423.6448">*</text></g><!--link WORLD to ELEMENTS--><g id="link_WORLD_ELEMENTS"><path codeLine="49" d="M444.46,372.92 C468.45,395.8 494.49,420.63 518.96,443.96 " fill="none" id="WORLD-ELEMENTS" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="451.9873" y="376.3467">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="7" x="504.0327" y="433.0782">*</text></g><!--SRC=[VPC_JyCm4CNtVWgh8r87LZP80ohgFv4K1iHWfKUmS7B1Te0AyTrnBfUWOfSiKNxFldVt78j2Isl5vkesJNBnDH7-ULOQxi5OXRMu4DOPLPSaoAgCyzQze3bcMjPbAqiufXzezDwZXytTSZxvdeZUdZxPdPQiPHNRkTijvX4y1riOrRYWCL9lK6exyiSdKXmsgkXeljakaeofRMG17SssbqawKD1GGUqwdYxJLRhEH-LTwbPslajLl_vwZuFrrNaoybnquwlQGGdcbuRp4axGB-oTUOit7eltJN9nQZqeJZHCZN3eIVXacAH6moGbq-YY_NOh3Boroi1-YvxR71Ei6WqE_hGxBCle779ClMOYNUJWjqi7_qYPEsY8dCXmWXmRdsqG7FCmEXR2y5Wu6H_hqG1PItpV9Pf3TEErlvNveOcxhkHdLg21-1Ght8C-oeBl-_HyAcOpUlKtac_YmC-c_0T7XFxlYmX3mZy0]--></g></svg>
+<?xml version="1.0" encoding="us-ascii" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    contentStyleType="text/css" height="652px" preserveAspectRatio="none"
+    style="width:726px;height:652px;background:#FFFFFF;fill-opacity=0.5" version="1.1"
+    viewBox="0 0 726 652" width="726px" zoomAndPan="magnify">
+    <defs />
+    <g><!--class
+        OBJECT-->
+        <g id="elem_OBJECT">
+            <rect codeLine="1" fill="#F1F1F1" height="129.4844" id="OBJECT" rx="2.5" ry="2.5"
+                style="stroke:#181818;stroke-width:0.5;" width="146" x="281" y="7" />
+            <ellipse cx="323.9" cy="23" fill="#ADD1B2" rx="11" ry="11"
+                style="stroke:#181818;stroke-width:1.0;" />
+            <path
+                d="M326.8688,28.6406 Q326.2906,28.9375 325.65,29.0781 Q325.0094,29.2344 324.3063,29.2344 Q321.8063,29.2344 320.4781,27.5938 Q319.1656,25.9375 319.1656,22.8125 Q319.1656,19.6875 320.4781,18.0313 Q321.8063,16.375 324.3063,16.375 Q325.0094,16.375 325.65,16.5313 Q326.3063,16.6875 326.8688,16.9844 L326.8688,19.7031 Q326.2438,19.125 325.65,18.8594 Q325.0563,18.5781 324.4313,18.5781 Q323.0875,18.5781 322.4,19.6563 Q321.7125,20.7188 321.7125,22.8125 Q321.7125,24.9063 322.4,25.9844 Q323.0875,27.0469 324.4313,27.0469 Q325.0563,27.0469 325.65,26.7813 Q326.2438,26.5 326.8688,25.9219 L326.8688,28.6406 Z "
+                fill="#000000" />
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+                textLength="52" x="344.1" y="27.8467">OBJECT</text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="282" x2="426" y1="39" y2="39" />
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+                textLength="123" x="287" y="55.9951">fileVersion : string</text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+                textLength="134" x="287" y="72.292">amgVersion : string</text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+                textLength="97" x="287" y="88.5889">author : string</text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+                textLength="116" x="287" y="104.8857">language : string</text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+                textLength="102" x="287" y="121.1826">world : WORLD</text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="282" x2="426" y1="128.4844"
+                y2="128.4844" />
+        </g><!--class
+        WORLD-->
+        <g id="elem_WORLD">
+            <rect codeLine="8" fill="#F1F1F1" height="178.375" id="WORLD" rx="2.5" ry="2.5"
+                style="stroke:#181818;stroke-width:0.5;" width="180" x="264" y="196.49" />
+            <ellipse cx="323.75" cy="212.49" fill="#ADD1B2" rx="11" ry="11"
+                style="stroke:#181818;stroke-width:1.0;" />
+            <path
+                d="M326.7188,218.1306 Q326.1406,218.4275 325.5,218.5681 Q324.8594,218.7244 324.1563,218.7244 Q321.6563,218.7244 320.3281,217.0838 Q319.0156,215.4275 319.0156,212.3025 Q319.0156,209.1775 320.3281,207.5213 Q321.6563,205.865 324.1563,205.865 Q324.8594,205.865 325.5,206.0213 Q326.1563,206.1775 326.7188,206.4744 L326.7188,209.1931 Q326.0938,208.615 325.5,208.3494 Q324.9063,208.0681 324.2813,208.0681 Q322.9375,208.0681 322.25,209.1463 Q321.5625,210.2088 321.5625,212.3025 Q321.5625,214.3963 322.25,215.4744 Q322.9375,216.5369 324.2813,216.5369 Q324.9063,216.5369 325.5,216.2713 Q326.0938,215.99 326.7188,215.4119 L326.7188,218.1306 Z "
+                fill="#000000" />
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+                textLength="52" x="344.25" y="217.3367">WORLD</text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="265" x2="443" y1="228.49" y2="228.49" />
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+                textLength="129" x="270" y="245.4851">worldName : string</text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+                textLength="123" x="270" y="261.782">worldUUID : string</text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+                textLength="168" x="270" y="278.0789">worldDescription : string</text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+                textLength="138" x="270" y="294.3757">worldGoals : string[]</text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+                textLength="116" x="270" y="310.6726">topics : TOPICS[]</text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+                textLength="128" x="270" y="326.9695">spaces : SPACES[]</text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+                textLength="162" x="270" y="343.2664">elements : ELEMENTS[]</text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+                textLength="149" x="270" y="359.5632">evaluationLink : string</text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="265" x2="443" y1="366.865"
+                y2="366.865" />
+        </g><!--class
+        TOPICS-->
+        <g id="elem_TOPICS">
+            <rect codeLine="18" fill="#F1F1F1" height="96.8906" id="TOPICS" rx="2.5" ry="2.5"
+                style="stroke:#181818;stroke-width:0.5;" width="182" x="7" y="491.9" />
+            <ellipse cx="68.25" cy="507.9" fill="#ADD1B2" rx="11" ry="11"
+                style="stroke:#181818;stroke-width:1.0;" />
+            <path
+                d="M71.2188,513.5406 Q70.6406,513.8375 70,513.9781 Q69.3594,514.1344 68.6563,514.1344 Q66.1563,514.1344 64.8281,512.4938 Q63.5156,510.8375 63.5156,507.7125 Q63.5156,504.5875 64.8281,502.9313 Q66.1563,501.275 68.6563,501.275 Q69.3594,501.275 70,501.4313 Q70.6563,501.5875 71.2188,501.8844 L71.2188,504.6031 Q70.5938,504.025 70,503.7594 Q69.4063,503.4781 68.7813,503.4781 Q67.4375,503.4781 66.75,504.5563 Q66.0625,505.6188 66.0625,507.7125 Q66.0625,509.8063 66.75,510.8844 Q67.4375,511.9469 68.7813,511.9469 Q69.4063,511.9469 70,511.6813 Q70.5938,511.4 71.2188,510.8219 L71.2188,513.5406 Z "
+                fill="#000000" />
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+                textLength="51" x="88.75" y="512.7467">TOPICS</text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="188" y1="523.9" y2="523.9" />
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+                textLength="108" x="13" y="540.8951">topicId : integer</text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+                textLength="126" x="13" y="557.192">topicName : string</text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+                textLength="170" x="13" y="573.4889">topicContents : integer[]</text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="188" y1="580.7906"
+                y2="580.7906" />
+        </g><!--class
+        SPACES-->
+        <g id="elem_SPACES">
+            <rect codeLine="23" fill="#F1F1F1" height="210.9688" id="SPACES" rx="2.5" ry="2.5"
+                style="stroke:#181818;stroke-width:0.5;" width="260" x="224" y="434.86" />
+            <ellipse cx="322.25" cy="450.86" fill="#ADD1B2" rx="11" ry="11"
+                style="stroke:#181818;stroke-width:1.0;" />
+            <path
+                d="M325.2188,456.5006 Q324.6406,456.7975 324,456.9381 Q323.3594,457.0944 322.6563,457.0944 Q320.1563,457.0944 318.8281,455.4538 Q317.5156,453.7975 317.5156,450.6725 Q317.5156,447.5475 318.8281,445.8913 Q320.1563,444.235 322.6563,444.235 Q323.3594,444.235 324,444.3913 Q324.6563,444.5475 325.2188,444.8444 L325.2188,447.5631 Q324.5938,446.985 324,446.7194 Q323.4063,446.4381 322.7813,446.4381 Q321.4375,446.4381 320.75,447.5163 Q320.0625,448.5788 320.0625,450.6725 Q320.0625,452.7663 320.75,453.8444 Q321.4375,454.9069 322.7813,454.9069 Q323.4063,454.9069 324,454.6413 Q324.5938,454.36 325.2188,453.7819 L325.2188,456.5006 Z "
+                fill="#000000" />
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+                textLength="55" x="342.75" y="455.7067">SPACES</text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="225" x2="483" y1="466.86" y2="466.86" />
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+                textLength="116" x="230" y="483.8551">spaceId : integer</text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+                textLength="128" x="230" y="500.152">spaceUUID : string</text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+                textLength="134" x="230" y="516.4489">spaceName : string</text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+                textLength="173" x="230" y="532.7457">spaceDescription : string</text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+                textLength="143" x="230" y="549.0426">spaceGoals : string[]</text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+                textLength="204" x="230" y="565.3395">spaceSlotContents : integer[]</text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+                textLength="248" x="230" y="581.6364">requiredPointsToComplete : integer</text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+                textLength="216" x="230" y="597.9332">requiredSpacesToEnter : string</text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+                textLength="159" x="230" y="614.2301">spaceTemplate : string</text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+                textLength="192" x="230" y="630.527">spaceTemplateStyle : string</text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="225" x2="483" y1="637.8288"
+                y2="637.8288" />
+        </g><!--class
+        ELEMENTS-->
+        <g id="elem_ELEMENTS">
+            <rect codeLine="35" fill="#F1F1F1" height="194.6719" id="ELEMENTS" rx="2.5" ry="2.5"
+                style="stroke:#181818;stroke-width:0.5;" width="200" x="519" y="443.01" />
+            <ellipse cx="577.75" cy="459.01" fill="#ADD1B2" rx="11" ry="11"
+                style="stroke:#181818;stroke-width:1.0;" />
+            <path
+                d="M580.7188,464.6506 Q580.1406,464.9475 579.5,465.0881 Q578.8594,465.2444 578.1563,465.2444 Q575.6563,465.2444 574.3281,463.6038 Q573.0156,461.9475 573.0156,458.8225 Q573.0156,455.6975 574.3281,454.0413 Q575.6563,452.385 578.1563,452.385 Q578.8594,452.385 579.5,452.5413 Q580.1563,452.6975 580.7188,452.9944 L580.7188,455.7131 Q580.0938,455.135 579.5,454.8694 Q578.9063,454.5881 578.2813,454.5881 Q576.9375,454.5881 576.25,455.6663 Q575.5625,456.7288 575.5625,458.8225 Q575.5625,460.9163 576.25,461.9944 Q576.9375,463.0569 578.2813,463.0569 Q578.9063,463.0569 579.5,462.7913 Q580.0938,462.51 580.7188,461.9319 L580.7188,464.6506 Z "
+                fill="#000000" />
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+                textLength="74" x="598.25" y="463.8567">ELEMENTS</text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="520" x2="718" y1="475.01" y2="475.01" />
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+                textLength="131" x="525" y="492.0051">elementId : integer</text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+                textLength="143" x="525" y="508.302">elementUUID : string</text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+                textLength="149" x="525" y="524.5989">elementName : string</text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+                textLength="188" x="525" y="540.8957">elementDescription : string</text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+                textLength="158" x="525" y="557.1926">elementGoals : string[]</text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+                textLength="171" x="525" y="573.4895">elementCategory : string</text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+                textLength="166" x="525" y="589.7864">elementFileType : string</text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+                textLength="186" x="525" y="606.0832">elementMaxScore : integer</text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+                textLength="151" x="525" y="622.3801">elementModel : string</text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="520" x2="718" y1="629.6819"
+                y2="629.6819" />
+        </g><!--link
+        OBJECT to WORLD-->
+        <g id="link_OBJECT_WORLD">
+            <path codeLine="46" d="M354,136.91 C354,155.54 354,176.24 354,196.1 " fill="none"
+                id="OBJECT-WORLD" style="stroke:#181818;stroke-width:1.0;" />
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing"
+                textLength="8" x="345.5875" y="156.4776">1</text>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing"
+                textLength="8" x="345.6813" y="185.4363">1</text>
+        </g><!--link
+        WORLD to TOPICS-->
+        <g id="link_WORLD_TOPICS">
+            <path codeLine="47" d="M264.46,375.05 C224.81,414.18 179.73,458.68 146.49,491.48 "
+                fill="none" id="WORLD-TOPICS" style="stroke:#181818;stroke-width:1.0;" />
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing"
+                textLength="8" x="249.006" y="394.8417">1</text>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing"
+                textLength="7" x="145.5355" y="480.9817">*</text>
+        </g><!--link
+        WORLD to SPACES-->
+        <g id="link_WORLD_SPACES">
+            <path codeLine="48" d="M354,375.05 C354,394.26 354,414.76 354,434.54 " fill="none"
+                id="WORLD-SPACES" style="stroke:#181818;stroke-width:1.0;" />
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing"
+                textLength="8" x="345.6813" y="394.8417">1</text>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing"
+                textLength="7" x="346.7539" y="423.6448">*</text>
+        </g><!--link
+        WORLD to ELEMENTS-->
+        <g id="link_WORLD_ELEMENTS">
+            <path codeLine="49" d="M444.46,372.92 C468.45,395.8 494.49,420.63 518.96,443.96 "
+                fill="none" id="WORLD-ELEMENTS" style="stroke:#181818;stroke-width:1.0;" />
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing"
+                textLength="8" x="451.9873" y="376.3467">1</text>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing"
+                textLength="7" x="504.0327" y="433.0782">*</text>
+        </g><!--SRC=[VPC_JyCm4CNtVWgh8r87LZP80ohgFv4K1iHWfKUmS7B1Te0AyTrnBfUWOfSiKNxFldVt78j2Isl5vkesJNBnDH7-ULOQxi5OXRMu4DOPLPSaoAgCyzQze3bcMjPbAqiufXzezDwZXytTSZxvdeZUdZxPdPQiPHNRkTijvX4y1riOrRYWCL9lK6exyiSdKXmsgkXeljakaeofRMG17SssbqawKD1GGUqwdYxJLRhEH-LTwbPslajLl_vwZuFrrNaoybnquwlQGGdcbuRp4axGB-oTUOit7eltJN9nQZqeJZHCZN3eIVXacAH6moGbq-YY_NOh3Boroi1-YvxR71Ei6WqE_hGxBCle779ClMOYNUJWjqi7_qYPEsY8dCXmWXmRdsqG7FCmEXR2y5Wu6H_hqG1PItpV9Pf3TEErlvNveOcxhkHdLg21-1Ght8C-oeBl-_HyAcOpUlKtac_YmC-c_0T7XFxlYmX3mZy0]-->
+    </g>
+</svg>
