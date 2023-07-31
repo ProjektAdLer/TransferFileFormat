@@ -4,7 +4,7 @@ Das Dateiformat dient zum Austausch von Daten zwischen den 3 AdLer-Komponenten A
 
 ## Visualisierung
 
-![Visualisierung des AWT-Formats](./Diagram.png)
+![Visualisierung des AWT-Formats](./Diagram.svg)
 
 Die Visualisierung stellt die Version 0.6 des AWT-Formats dar.
 
