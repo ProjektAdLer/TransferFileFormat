@@ -72,8 +72,8 @@ Die Namen von Schlüsseln, welche mehrere Werte (Arrays) beinhalten, sollen imme
 | spaceDescription         | string                    | Beschreibung des Spaces, welche dem Nutzer angezeigt wird                                                            | Nein      |
 | spaceGoals               | [string]                  | Einzelne Lernziele des Spaces                                                                                        | Nein      |
 | spaceSlotContents        | [int]                     | Die Lernelemente, welche sich in dem Raum befinden mit deren Slot (repräsentiert durch den Array index(null = leer)) | Ja        |
-| roomTemplate             | string                    | Das Temapate, welches für das Modell des Raumes genutzt wird                                                         | Ja        |
-| roomTemplateStyle        | string                    | Der Style des Templates, welcher genutzt werden soll                                                                 | Ja        |
+| spaceTemplate             | string                    | Das Temapate, welches für das Modell des Raumes genutzt wird                                                         | Ja        |
+| spaceTemplateStyle        | string                    | Der Style des Templates, welcher genutzt werden soll                                                                 | Ja        |
 
 ### Beschreibung der Felder des Elements
 
@@ -117,13 +117,6 @@ Eine Beispielhafte Verknüpfung für einen Lernraum ist: `"requiredSpacesToEnter
 
 ## Mögliche Werte (Bitte ergänzen)
 
-### lmsElementIdentifier
-
-- type: "idNumber"
-  - value: "UUID"
-- type: "moduleName"
-  - value: "NameDesModulsInMoodle"
-
 ### elementCategory
 
 - "image", "text", "h5p" oder "video"
@@ -135,8 +128,8 @@ Eine Beispielhafte Verknüpfung für einen Lernraum ist: `"requiredSpacesToEnter
 ### Raum Templates und deren Datentypen
 
 Nachfolgend sind die Templates aufgelistet, welche für die Darstellung der Räume genutzt werden können.
-In den Spalten "Template" befinden sich die möglichen Strings für das Feld **roomTemplate**.
-In den Spalten "Style" befinden sich die möglichen Strings für das Feld **roomTemplateStyle**.
+In den Spalten "Template" befinden sich die möglichen Strings für das Feld **spaceTemplate**.
+In den Spalten "Style" befinden sich die möglichen Strings für das Feld **spaceTemplateStyle**.
 | Template | Style | Beschreibung |
 | ----------- | ------------ | ---------------------------------------- |
 | "Template1" | "Template1Style1" | |
@@ -168,8 +161,8 @@ In Version 0.4 werden Templates für Lernräume sowie für Lernelemente hinzugef
 
 #### Änderungen am Space
 
-- **roomTemplate**: Das Template, welches für das Modell des Raumes genutzt wird
-- **roomTemplateStyle**: Der Style des Templates, welcher genutzt werden soll
+- **spaceTemplate**: Das Template, welches für das Modell des Raumes genutzt wird
+- **spaceTemplateStyle**: Der Style des Templates, welcher genutzt werden soll
 - **spaceSlotContents**: Die Lernelemente, welche sich in dem Raum befinden mit deren Slot (repräsentiert durch den Array index(null = leer))
 
 #### Änderungen am Element
