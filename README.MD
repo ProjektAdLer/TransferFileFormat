@@ -6,7 +6,7 @@ Das Dateiformat dient zum Austausch von Daten zwischen den 3 AdLer-Komponenten A
 
 ![Visualisierung des AWT-Formats](./Diagram.svg)
 
-Die Visualisierung stellt die Version 0.6 des AWT-Formats dar.
+Die Visualisierung stellt die Version 0.5 des AWT-Formats dar.
 
 ## Datenstruktur
 
@@ -147,9 +147,7 @@ In den Spalten "Style" befinden sich die möglichen Strings für das Feld **spac
 | "pdf"           | "pdfModel1"   |              |
 
 ## Changelog
-## Version 0.6
-### Changes to the Element
- - The `elementCategory` field in the JSON Schema now has an `"enum"` constraint. It only allows the following values: "h5p", "h5p-primitive", "text", "image", "video", "pdf".
+
 
 ## Version 0.5
 ### Changes to the World
