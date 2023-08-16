@@ -56,15 +56,17 @@
         "elementMaxScore": 123, // TODO: This needs to be clarified with Team DTK
         "elementModel": "Adaptivity3DModel",
         "content": {
+          "shuffleQuestions": false, // TODO: Do we want to allow shuffling of Questions?
           "questions": [
             // The index of the Questions has to be the same as the index of the question in the LMS this way we can identify them
             {
               "questionText": "Frage 1",
+              "questionTitle": "Titel der Frage", // optional
               "questionImage": "https://via.placeholder.com/150", // optional // TODO: Do we want to allow Images in Questions AND Answers?
               // TODO: Do we really need Points for every Question
               //The Adaptivity Module is only successful if all Questions are answered correctly
               "questionPoints": 1,
-              "questionType": "singleChoice",
+              "questionType": "singleResponse",
               // Maybe someone finds a better name for this
               "adaptivityData": [
                 {
@@ -75,6 +77,7 @@
               "questionAnswers": [
                 {
                   "answerId": 1,
+                  "questionTitle": "Titel der Frage", // optional
                   "answerText": "Antwort 1",
                   "answerImage": "https://via.placeholder.com/150", // optional
                   "answerCorrect": true
@@ -88,7 +91,7 @@
             },
             {
               "questionText": "Frage 2",
-              "questionType": "multipleChoice",
+              "questionType": "multipleResponse",
               "questionImage": "https://via.placeholder.com/150", // optional
               "questionPoints": 1,
               "questionAnswers": [
