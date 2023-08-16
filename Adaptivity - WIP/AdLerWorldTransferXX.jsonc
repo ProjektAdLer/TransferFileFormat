@@ -55,7 +55,7 @@
         "elementFileType": "adaptivity", // TODO: Maybe this can be left out since we only have one adaptivity module
         "elementMaxScore": 123, // TODO: This needs to be clarified with Team DTK
         "elementModel": "Adaptivity3DModel",
-        "content": {
+        "adaptivityContent": {
           "shuffleQuestions": false, // TODO: Do we want to allow shuffling of Questions?
           "questions": [
             // The index of the Questions has to be the same as the index of the question in the LMS this way we can identify them
