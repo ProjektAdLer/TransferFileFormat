@@ -6,6 +6,7 @@
   "author": "Peter",
   "language": "de",
   "world": {
+    "$type": "LearningWorld",
     "worldName": "Name der Welt",
     "worldUUID": "12345678-1234-1234-1234-123456789012",
     "worldDescription": "Beschreibung der Welt",
@@ -13,6 +14,7 @@
     "evaluationLink": "http://example.com",
     "topics": [
       {
+        "$type": "LearningTopic",
         "topicId": 1,
         "topicName": "A",
         "topicContents": [1, 2]
@@ -20,6 +22,7 @@
     ],
     "spaces": [
       {
+        "$type": "LearningSpace",
         "spaceId": 1,
         "spaceUUID": "12345678-1234-1234-1234-123456789012",
         "spaceName": "Name des Lernraums",
@@ -34,6 +37,7 @@
     ],
     "elements": [
       {
+        "$type": "LearningElement",
         "elementId": 1,
         "elementUUID": "12345678-1234-1234-1234-123456789012",
         "elementName": "Name des Elements",
@@ -46,6 +50,7 @@
       },
       // This is the Adaptivity Module
       {
+        "$type": "AdaptivityLearningElement",
         "elementId": 2,
         "elementUUID": "12345678-1234-1234-1234-123456789012",
         "elementName": "The One and only Adaptivity Module",
@@ -56,11 +61,13 @@
         "elementMaxScore": 123, // TODO: This needs to be clarified with Team DTK
         "elementModel": "Adaptivity3DModel",
         "adaptivityContent": {
+          "$type": "adaptivityContent",
           "introText": "Liebe Studies, bla bla bla", // TODO: Wie viel Markup brauchen wir hier?
           "shuffleTasks": false, // Vgl. Folie 2 Entwurf für Studierende// TODO: Do we want to allow shuffling of Tasks?
           "adaptivityTasks": [
             // Tasks = Aufgaben, Questions = Difficulty
             {
+              "$type": "adaptivityTask",
               "taskId": 1,
               "taskUuid": "12345678-1234-1234-1234-123456789012", // UUID
               "taskTitle": "Aufgabe 1",
@@ -68,6 +75,7 @@
               "requiredDifficulty": 1, // 0 = easy, 1 = medium, 2 = hard (enum)
               "adaptivityQuestions": [
                 {
+                  "$type": "adaptivityQuestion",
                   "questionType": "singleResponse", // or "multipleResponse"
                   "questionId": 1,
                   "questionUuid": "12345678-1234-1234-1234-123456789012",
@@ -75,29 +83,24 @@
                   "questionText": "Text ",
                   "adaptivityRules": [
                     {
+                      "$type": "correctnessTrigger",
                       "triggerId": 1,
                       "triggerType": "correctnessTrigger", // or TimeTrigger or CompositeTrigger
                       "triggerCondition": "correct", // or "incorrect" or "time" or "composite"
-                      "actions": [
+                      "adaptivityActions": [
                         {
-                          "actionType": "commentAction",
-                          "actionContent": {
-                            "commentText": "Das war falsch, versuch doch mal besser nachzudenken!"
-                          }
+                          "$type": "AdaptivityCommentAction",
+                          "commentText": "Das war falsch, versuch doch mal besser nachzudenken!"
                         },
                         {
-                          "actionType": "elementReferenceAction",
-                          "actionContent": {
-                            "commentText": "Das war falsch, schau dir doch noch mal das Lernelement <BLA> an",
-                            "elementId": 1 // ID of the Learning Element to be referenced
-                          }
+                          "$type": "AdaptivityElementReferenceAction",
+                          "commentText": "Das war falsch, schau dir doch noch mal das Lernelement <BLA> an",
+                          "elementId": 1 // ID of the Learning Element to be referenced
                         },
                         {
-                          "actionType": "contentReferenceAction",
-                          "actionContent": {
-                            "commentText": "Das war falsch, hier ist ein PDF, was es dir nochmal erklärt",
-                            "elementId": 1 // ID of the Content to be referenced (which is also a learning element)
-                          }
+                          "$type": "AdaptivityContentReferenceAction",
+                          "commentText": "Das war falsch, hier ist ein PDF, was es dir nochmal erklärt",
+                          "elementId": 1 // ID of the Content to be referenced (which is also a learning element)
                         }
                       ]
                     }
@@ -110,6 +113,7 @@
       },
       // This is the "external" Learning Element. It is handled just like the normal ones but it is not part of the World and does not have Points
       {
+        "$type": "BaseLearningElement",
         "elementId": 666,
         "elementUUID": "12345678-1234-1234-1234-123456789012",
         "elementName": "Ich bims 1 externes Lernelement",
