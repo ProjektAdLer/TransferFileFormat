@@ -1,0 +1,123 @@
+// This is a .jsonc file (JSON with Comments) - remove the c in the file extension and
+// remove the comments to make it a valid .json file.
+{
+  "fileVersion": "X.X", // Adaptivität
+  "amgVersion": "X.X",
+  "author": "Peter",
+  "language": "de",
+  "world": {
+    "worldName": "Name der Welt",
+    "worldUUID": "12345678-1234-1234-1234-123456789012",
+    "worldDescription": "Beschreibung der Welt",
+    "worldGoals": ["Ziel 1", "Ziel 2"],
+    "evaluationLink": "http://example.com",
+    "topics": [
+      {
+        "topicId": 1,
+        "topicName": "A",
+        "topicContents": [1, 2]
+      }
+    ],
+    "spaces": [
+      {
+        "spaceId": 1,
+        "spaceUUID": "12345678-1234-1234-1234-123456789012",
+        "spaceName": "Name des Lernraums",
+        "spaceDescription": "Beschreibung des Lernraums",
+        "spaceGoals": ["Ziel 1", "Ziel 2"],
+        "spaceSlotContents": [1, null, 2, 3, null, null],
+        "requiredPointsToComplete": 100,
+        "requiredSpacesToEnter": "(5)v((7)^(4))",
+        "spaceTemplate": "rectangle2x3",
+        "spaceTemplateStyle": "casino"
+      }
+    ],
+    "elements": [
+      {
+        "elementId": 1,
+        "elementUUID": "12345678-1234-1234-1234-123456789012",
+        "elementName": "Name des Elements",
+        "elementDescription": "Beschreibung des Lernelements",
+        "elementGoals": ["Ziel 1", "Ziel 2"],
+        "elementCategory": "image",
+        "elementFileType": "image:png",
+        "elementMaxScore": 123,
+        "elementModel": "ArcadeMachine"
+      },
+      // This is the Adaptivity Module
+      {
+        "elementId": 2,
+        "elementUUID": "12345678-1234-1234-1234-123456789012",
+        "elementName": "The One and only Adaptivity Module",
+        "elementDescription": "Check: Hast du alles verstanden?",
+        "elementGoals": ["Unklarheiten klären", "Ziel 2"],
+        "elementCategory": "adaptivity",
+        "elementFileType": "adaptivity", // TODO: Maybe this can be left out since we only have one adaptivity module
+        "elementMaxScore": 123, // TODO: This needs to be clarified with Team DTK
+        "elementModel": "Adaptivity3DModel",
+        "adaptivityContent": {
+          "introText": "Liebe Studies, bla bla bla", // TODO: Wie viel Markup brauchen wir hier?
+          "shuffleTasks": false, // Vgl. Folie 2 Entwurf für Studierende// TODO: Do we want to allow shuffling of Tasks?
+          "adaptivityTasks": [
+            // Tasks = Aufgaben, Questions = Difficulty
+            {
+              "taskId": 1,
+              "taskUuid": "12345678-1234-1234-1234-123456789012", // UUID
+              "taskTitle": "Aufgabe 1",
+              "optional": false,
+              "requiredDifficulty": 1, // 0 = easy, 1 = medium, 2 = hard (enum)
+              "adaptivityQuestions": [
+                {
+                  "questionType": "singleResponse", // or "multipleResponse"
+                  "questionId": 1,
+                  "questionUuid": "12345678-1234-1234-1234-123456789012",
+                  "questionDifficulty": 0,
+                  "questionText": "Text ",
+                  "adaptivityRules": [
+                    {
+                      "triggerId": 1,
+                      "triggerType": "correctnessTrigger", // or TimeTrigger or CompositeTrigger
+                      "triggerCondition": "correct", // or "incorrect" or "time" or "composite"
+                      "actions": [
+                        {
+                          "actionType": "commentAction",
+                          "actionContent": {
+                            "commentText": "Das war falsch, versuch doch mal besser nachzudenken!"
+                          }
+                        },
+                        {
+                          "actionType": "elementReferenceAction",
+                          "actionContent": {
+                            "commentText": "Das war falsch, schau dir doch noch mal das Lernelement <BLA> an",
+                            "elementId": 1 // ID of the Learning Element to be referenced
+                          }
+                        },
+                        {
+                          "actionType": "contentReferenceAction",
+                          "actionContent": {
+                            "commentText": "Das war falsch, hier ist ein PDF, was es dir nochmal erklärt",
+                            "elementId": 1 // ID of the Content to be referenced (which is also a learning element)
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      },
+      // This is the "external" Learning Element. It is handled just like the normal ones but it is not part of the World and does not have Points
+      {
+        "elementId": 666,
+        "elementUUID": "12345678-1234-1234-1234-123456789012",
+        "elementName": "Ich bims 1 externes Lernelement",
+        "elementDescription": "Beschreibung des Lernelements",
+        "elementGoals": ["Ziel 1", "Ziel 2"],
+        "elementCategory": "externalText",
+        "elementFileType": "externalText"
+      }
+    ]
+  }
+}
