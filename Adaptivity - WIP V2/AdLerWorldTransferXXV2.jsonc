@@ -51,7 +51,7 @@
       },
       // This is the Adaptivity Module
       {
-        "$type": "AdaptivityLearningElement",
+        "$type": "AdaptivityElement",
         "elementId": 2,
         "elementUUID": "12345678-1234-1234-1234-123456789012",
         "elementName": "The One and only Adaptivity Module",
