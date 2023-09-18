@@ -1,6 +1,7 @@
 // This is a .jsonc file (JSON with Comments) - remove the c in the file extension and
 // remove the comments to make it a valid .json file.
 {
+  "$type": "ATF", // Types are not necessary for every object. But it helps consistency and readability if every object has one.
   "fileVersion": "X.X", // Adaptivität
   "amgVersion": "X.X",
   "author": "Peter",
@@ -72,7 +73,7 @@
               "taskUuid": "12345678-1234-1234-1234-123456789012", // UUID
               "taskTitle": "Aufgabe 1",
               "optional": false,
-              "requiredDifficulty": 1, // 0 = easy, 1 = medium, 2 = hard (enum)
+              "requiredDifficulty": 100, // 000 = easy, 100 = medium, 200 = hard
               "adaptivityQuestions": [
                 {
                   "$type": "adaptivityQuestion",
@@ -88,6 +89,7 @@
                       "triggerType": "correctnessTrigger", // or TimeTrigger or CompositeTrigger
                       "triggerCondition": "correct", // or "incorrect" or "time" or "composite"
                       "adaptivityActions": [
+                        // In the concept, we dont have an Array here.
                         {
                           "$type": "AdaptivityCommentAction",
                           "commentText": "Das war falsch, versuch doch mal besser nachzudenken!"
