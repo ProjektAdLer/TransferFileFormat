@@ -88,23 +88,10 @@
                       "triggerId": 1,
                       "triggerType": "correctnessTrigger", // or TimeTrigger or CompositeTrigger
                       "triggerCondition": "correct", // or "incorrect" or "time" or "composite"
-                      "adaptivityActions": [
-                        // In the concept, we dont have an Array here.
-                        {
-                          "$type": "AdaptivityCommentAction",
-                          "commentText": "Das war falsch, versuch doch mal besser nachzudenken!"
-                        },
-                        {
-                          "$type": "AdaptivityElementReferenceAction",
-                          "commentText": "Das war falsch, schau dir doch noch mal das Lernelement <BLA> an",
-                          "elementId": 1 // ID of the Learning Element to be referenced
-                        },
-                        {
-                          "$type": "AdaptivityContentReferenceAction",
-                          "commentText": "Das war falsch, hier ist ein PDF, was es dir nochmal erklärt",
-                          "elementId": 1 // ID of the Content to be referenced (which is also a learning element)
-                        }
-                      ]
+                      "adaptivityAction": {
+                          "$type": "CommentAction", //or ElementReferenceAction or ContentReferenceAction
+                          "commentText": "Das war falsch, versuch doch mal besser nachzudenken!" // In case of ElementReferenceAction or ContentReferenceAction, the field 'commentText' will be replaced by 'elementId'
+                      }
                     }
                   ]
                 }
