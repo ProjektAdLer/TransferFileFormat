@@ -84,12 +84,11 @@
                   "questionText": "Was ist der Sinn des Lebens?",
                   "adaptivityRules": [
                     {
-                      "$type": "correctnessTrigger",
+                      "$type": "correctnessTrigger", // or TimeTrigger or CompositeTrigger
                       "triggerId": 1,
-                      "triggerType": "correctnessTrigger", // or TimeTrigger or CompositeTrigger
                       "triggerCondition": "correct", // or "incorrect" or "time" or "composite"
                       "adaptivityAction": {
-                        "$type": "CommentAction", //or ElementReferenceAction or ContentReferenceAction
+                        "$type": "CommentAction", // or ElementReferenceAction or ContentReferenceAction
                         "commentText": "Das war falsch, versuch doch mal besser nachzudenken!" // In case of ElementReferenceAction or ContentReferenceAction, the field 'commentText' will be replaced by 'elementId'
                       }
                     }
@@ -100,11 +99,11 @@
                     // Hindergrund der fehlenden IDs ist es, dass es im LMS nicht möglich ist, ihnen eine ID zu geben und dort auch mit dem Index
                     // gearbeitet wird.
                     {
-                      "$type": "adaptivityAnswer",
+                      "$type": "AdaptivityQuestionAnswer",
                       "answerText": "42"
                     },
                     {
-                      "$type": "adaptivityAnswer",
+                      "$type": "AdaptivityQuestionAnswer",
                       "answerText": "Für AdLer zu arbeiten"
                     }
                   ]
