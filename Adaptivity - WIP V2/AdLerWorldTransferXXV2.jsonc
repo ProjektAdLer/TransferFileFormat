@@ -81,7 +81,7 @@
                   "questionId": 1,
                   "questionUuid": "12345678-1234-1234-1234-123456789012",
                   "questionDifficulty": 0,
-                  "questionText": "Text ",
+                  "questionText": "Was ist der Sinn des Lebens?",
                   "adaptivityRules": [
                     {
                       "$type": "correctnessTrigger",
@@ -89,9 +89,23 @@
                       "triggerType": "correctnessTrigger", // or TimeTrigger or CompositeTrigger
                       "triggerCondition": "correct", // or "incorrect" or "time" or "composite"
                       "adaptivityAction": {
-                          "$type": "CommentAction", //or ElementReferenceAction or ContentReferenceAction
-                          "commentText": "Das war falsch, versuch doch mal besser nachzudenken!" // In case of ElementReferenceAction or ContentReferenceAction, the field 'commentText' will be replaced by 'elementId'
+                        "$type": "CommentAction", //or ElementReferenceAction or ContentReferenceAction
+                        "commentText": "Das war falsch, versuch doch mal besser nachzudenken!" // In case of ElementReferenceAction or ContentReferenceAction, the field 'commentText' will be replaced by 'elementId'
                       }
+                    }
+                  ],
+                  "possibleAnswers": [
+                    // Hier ist die Stelle im Array wichtig. Damit werden die Antworten identifiziert.
+                    // Wenn also irgend welche arten von "Mixen/Shufflen" von Antworten existiern soll, findet das im Frontend statt
+                    // Hindergrund der fehlenden IDs ist es, dass es im LMS nicht möglich ist, ihnen eine ID zu geben und dort auch mit dem Index
+                    // gearbeitet wird.
+                    {
+                      "$type": "adaptivityAnswer",
+                      "answerText": "42"
+                    },
+                    {
+                      "$type": "adaptivityAnswer",
+                      "answerText": "Für AdLer zu arbeiten"
                     }
                   ]
                 }
