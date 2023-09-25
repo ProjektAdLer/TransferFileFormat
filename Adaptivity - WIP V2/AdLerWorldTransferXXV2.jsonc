@@ -93,7 +93,7 @@
                       }
                     }
                   ],
-                  "possibleAnswers": [
+                  "choices": [
                     // Hier ist die Stelle im Array wichtig. Damit werden die Antworten identifiziert.
                     // Wenn also irgend welche arten von "Mixen/Shufflen" von Antworten existiern soll, findet das im Frontend statt
                     // Hindergrund der fehlenden IDs ist es, dass es im LMS nicht möglich ist, ihnen eine ID zu geben und dort auch mit dem Index
