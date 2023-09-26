@@ -64,16 +64,15 @@
         "adaptivityContent": {
           "$type": "adaptivityContent",
           "introText": "Liebe Studies, bla bla bla", // TODO: Wie viel Markup brauchen wir hier?
-          "shuffleTasks": false, // Vgl. Folie 2 Entwurf für Studierende// TODO: Do we want to allow shuffling of Tasks?
           "adaptivityTasks": [
             // Tasks = Aufgaben, Questions = Difficulty
             {
               "$type": "adaptivityTask",
               "taskId": 1,
               "taskUuid": "12345678-1234-1234-1234-123456789012", // UUID
-              "taskTitle": "Aufgabe 1",
+              "taskName": "Aufgabe 1",
               "optional": false,
-              "requiredDifficulty": 100, // 000 = easy, 100 = medium, 200 = hard
+              "minimumRequiredDifficulty": 100, // 000 = easy, 100 = medium, 200 = hard optional
               "adaptivityQuestions": [
                 {
                   "$type": "adaptivityQuestion",
