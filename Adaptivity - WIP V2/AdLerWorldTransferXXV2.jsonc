@@ -83,12 +83,32 @@
                   "questionText": "Was ist der Sinn des Lebens?",
                   "adaptivityRules": [
                     {
-                      "$type": "correctnessTrigger", // or TimeTrigger or CompositeTrigger
+                      "$type": "correctnessTrigger",
                       "triggerId": 1,
-                      "triggerCondition": "correct", // or "incorrect" or "time" or "composite"
+                      "triggerCondition": "correct",
                       "adaptivityAction": {
-                        "$type": "CommentAction", // or ElementReferenceAction or ContentReferenceAction
-                        "commentText": "Das war falsch, versuch doch mal besser nachzudenken!" // In case of ElementReferenceAction or ContentReferenceAction, the field 'commentText' will be replaced by 'elementId'
+                        "$type": "CommentAction",
+                        "commentText": "Das war falsch, versuch doch mal besser nachzudenken!"
+                      }
+                    },
+                    {
+                      "$type": "correctnessTrigger",
+                      "triggerId": 1,
+                      "triggerCondition": "correct",
+                      "adaptivityAction": {
+                        "$type": "AdaptivityReferenceAction",
+                        "ElementId": 13,
+                        "hintText": null
+                      }
+                    },
+                    {
+                      "$type": "correctnessTrigger",
+                      "triggerId": 1,
+                      "triggerCondition": "correct",
+                      "adaptivityAction": {
+                        "$type": "AdaptivityContentReferenceAction",
+                        "ElementId": 1337,
+                        "hintText": "Das war falsch, versuch doch mal besser nachzudenken! HIer ist ein Lerninhalt, welcher dir dabei helfen kann."
                       }
                     }
                   ],
