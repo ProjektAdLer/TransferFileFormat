@@ -72,7 +72,7 @@
               "taskUuid": "12345678-1234-1234-1234-123456789012", // UUID
               "taskName": "Aufgabe 1",
               "optional": false,
-              "minimumRequiredDifficulty": 100, // 000 = easy, 100 = medium, 200 = hard optional
+              "minimumRequiredDifficulty": 100, // 0 = easy, 100 = medium, 200 = hard  Feld ist optional
               "adaptivityQuestions": [
                 {
                   "$type": "adaptivityQuestion",
@@ -108,7 +108,7 @@
                       "adaptivityAction": {
                         "$type": "AdaptivityContentReferenceAction",
                         "ElementId": 1337,
-                        "hintText": "Das war falsch, versuch doch mal besser nachzudenken! HIer ist ein Lerninhalt, welcher dir dabei helfen kann."
+                        "hintText": "Das war falsch, versuch doch mal besser nachzudenken! Hier ist ein Lerninhalt, welcher dir dabei helfen kann."
                       }
                     }
                   ],
