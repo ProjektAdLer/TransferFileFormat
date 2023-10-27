@@ -138,8 +138,8 @@
         "elementId": 666,
         "elementUUID": "12345678-1234-1234-1234-123456789012",
         "elementName": "Ich bims 1 externes Lernelement",
-        "elementCategory": "externalText",
-        "elementFileType": "externalText"
+        "elementCategory": "text",
+        "elementFileType": "text"
       }
     ]
   }
