@@ -9,7 +9,6 @@
   "world": {
     "$type": "LearningWorld",
     "worldName": "Name der Welt",
-    "worldUUID": "12345678-1234-1234-1234-123456789012",
     "worldDescription": "Beschreibung der Welt",
     "worldGoals": ["Ziel 1", "Ziel 2"],
     "evaluationLink": "http://example.com",
@@ -25,7 +24,7 @@
       {
         "$type": "LearningSpace",
         "spaceId": 1,
-        "spaceUUID": "12345678-1234-1234-1234-123456789012",
+        "spaceUuid": "12345678-1234-1234-1234-123456789012",
         "spaceName": "Name des Lernraums",
         "spaceDescription": "Beschreibung des Lernraums",
         "spaceGoals": ["Ziel 1", "Ziel 2"],
@@ -40,7 +39,7 @@
       {
         "$type": "LearningElement",
         "elementId": 1,
-        "elementUUID": "12345678-1234-1234-1234-123456789012",
+        "elementUuid": "12345678-1234-1234-1234-123456789012",
         "elementName": "Name des Elements",
         "elementDescription": "Beschreibung des Lernelements",
         "elementGoals": ["Ziel 1", "Ziel 2"],
@@ -53,33 +52,33 @@
       {
         "$type": "AdaptivityElement",
         "elementId": 2,
-        "elementUUID": "12345678-1234-1234-1234-123456789012",
+        "elementUuid": "12345678-1234-1234-1234-123456789012",
         "elementName": "The One and only Adaptivity Module",
         "elementDescription": "Check: Hast du alles verstanden?",
         "elementGoals": ["Unklarheiten klären", "Ziel 2"],
         "elementCategory": "adaptivity",
-        "elementFileType": "adaptivity", // TODO: Maybe this can be left out since we only have one adaptivity module
-        "elementMaxScore": 123, // TODO: This needs to be clarified with Team DTK
+        "elementFileType": "adaptivity",
+        "elementMaxScore": 123,
         "elementModel": "Adaptivity3DModel",
         "adaptivityContent": {
           "$type": "adaptivityContent",
-          "introText": "Liebe Studies, bla bla bla", // TODO: Wie viel Markup brauchen wir hier?
+          "introText": "Liebe Studies, bla bla bla",
           "adaptivityTasks": [
             // Tasks = Aufgaben, Questions = Difficulty
             {
               "$type": "adaptivityTask",
               "taskId": 1,
-              "taskUuid": "12345678-1234-1234-1234-123456789012", // UUID
+              "taskUuid": "12345678-1234-1234-1234-123456789012", // Uuid
               "taskName": "Aufgabe 1",
               "optional": false,
-              "minimumRequiredDifficulty": 100, // 0 = easy, 100 = medium, 200 = hard  Feld ist optional
+              "minimumRequiredDifficulty": 100, // 000 = easy, 100 = medium, 200 = hard  Feld ist optional
               "adaptivityQuestions": [
                 {
                   "$type": "adaptivityQuestion",
                   "questionType": "singleResponse", // or "multipleResponse"
                   "questionId": 1,
                   "questionUuid": "12345678-1234-1234-1234-123456789012",
-                  "questionDifficulty": 0,
+                  "questionDifficulty": 100, // 000 = easy, 100 = medium, 200 = hard
                   "questionText": "Was ist der Sinn des Lebens?",
                   "adaptivityRules": [
                     {
@@ -136,7 +135,7 @@
       {
         "$type": "BaseLearningElement",
         "elementId": 666,
-        "elementUUID": "12345678-1234-1234-1234-123456789012",
+        "elementUuid": "12345678-1234-1234-1234-123456789012",
         "elementName": "Ich bims 1 externes Lernelement",
         "elementCategory": "text",
         "elementFileType": "text"
