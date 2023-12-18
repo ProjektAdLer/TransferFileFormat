@@ -42,35 +42,34 @@ Die Namen von Schlüsseln, welche mehrere Werte (Arrays) beinhalten, sollen imme
 
 ### Beschreibung der Felder des Adaptivity Modules
 
-| Schlüssel                | Datentyp     | Funktion                                                                                                                                                                                         | benötigt? |
-| ------------------------ | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------- |
-| `$type`                  | string       | Typ des Moduls/Elements                                                                                                                                                                          | Ja        |
-| `elementId`              | int          | Eindeutige ID des Adaptivity-Moduls                                                                                                                                                              | Ja        |
-| `elementUUID`            | string       | Eindeutige UUID des Adaptivity-Moduls                                                                                                                                                           | Ja        |
-| `elementName`            | string       | Name des Adaptivity-Moduls                                                                                                                                                                       | Ja        |
-| `elementDescription`     | string       | Beschreibung des Adaptivity-Moduls                                                                                                                                                               | Nein      |
-| `elementGoals`           | [string]     | Ziele des Adaptivity-Moduls                                                                                                                                                                      | Nein      |
-| `elementCategory`        | string       | Kategorie des Moduls (z.B. "adaptivity")                                                                                                                                                         | Ja        |
-| `elementFileType`        | string       | Art des Dateityps des Adaptivity-Moduls (könnte optional sein, da nur ein Adaptivity-Modul existiert)                                                                                           | Ja        |
-| `elementMaxScore`        | integer      | Maximale Punktzahl, die für das Modul vergeben werden kann (noch zu klären)                                                                                                                     | Ja        |
-| `elementModel`           | string       | Modell zur Anzeige des Moduls                                                                                                                                                                    | Ja        |
-| `adaptivityContent`      | object       | Inhalte des Adaptivity-Moduls                                                                                                                                                                    | Ja        |
-| `adaptivityTasks`        | [object]     | Liste der Aufgaben innerhalb des Adaptivity-Moduls                                                                                                                                               | Ja        |
-| `adaptivityQuestions`    | [object]     | Fragen, die mit den Aufgaben verbunden sind                                                                                                                                                      | Ja        |
-| `adaptivityRules`        | [object]     | Regeln für die Adaptivität basierend auf der Richtigkeit der Antwort                                                                                                                             | Ja        |
-| `choices`                | [object]     | Auswahlmöglichkeiten für die Fragen (Ordnung im Array ist wichtig zur Identifizierung der Antworten; Mischung/Neuordnung sollte im Frontend erfolgen, da keine IDs für die Auswahlmöglichkeiten existieren) | Ja        |
+| Schlüssel             | Datentyp | Funktion                                                                                                                                                                                                    | benötigt? |
+| --------------------- | -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- |
+| `$type`               | string   | Typ des Moduls/Elements                                                                                                                                                                                     | Ja        |
+| `elementId`           | int      | Eindeutige ID des Adaptivity-Moduls                                                                                                                                                                         | Ja        |
+| `elementUUID`         | string   | Eindeutige UUID des Adaptivity-Moduls                                                                                                                                                                       | Ja        |
+| `elementName`         | string   | Name des Adaptivity-Moduls                                                                                                                                                                                  | Ja        |
+| `elementDescription`  | string   | Beschreibung des Adaptivity-Moduls                                                                                                                                                                          | Nein      |
+| `elementGoals`        | [string] | Ziele des Adaptivity-Moduls                                                                                                                                                                                 | Nein      |
+| `elementCategory`     | string   | Kategorie des Moduls (z.B. "adaptivity")                                                                                                                                                                    | Ja        |
+| `elementFileType`     | string   | Art des Dateityps des Adaptivity-Moduls (könnte optional sein, da nur ein Adaptivity-Modul existiert)                                                                                                       | Ja        |
+| `elementMaxScore`     | integer  | Maximale Punktzahl, die für das Modul vergeben werden kann (noch zu klären)                                                                                                                                 | Ja        |
+| `elementModel`        | string   | Modell zur Anzeige des Moduls                                                                                                                                                                               | Ja        |
+| `adaptivityContent`   | object   | Inhalte des Adaptivity-Moduls                                                                                                                                                                               | Ja        |
+| `adaptivityTasks`     | [object] | Liste der Aufgaben innerhalb des Adaptivity-Moduls                                                                                                                                                          | Ja        |
+| `adaptivityQuestions` | [object] | Fragen, die mit den Aufgaben verbunden sind                                                                                                                                                                 | Ja        |
+| `adaptivityRules`     | [object] | Regeln für die Adaptivität basierend auf der Richtigkeit der Antwort                                                                                                                                        | Ja        |
+| `choices`             | [object] | Auswahlmöglichkeiten für die Fragen (Ordnung im Array ist wichtig zur Identifizierung der Antworten; Mischung/Neuordnung sollte im Frontend erfolgen, da keine IDs für die Auswahlmöglichkeiten existieren) | Ja        |
 
 ### Beschreibung der Felder für externe Lernelemente
 
-| Schlüssel           | Datentyp | Funktion                                                                                                            | benötigt? |
-| ------------------- | -------- | ------------------------------------------------------------------------------------------------------------------- | --------- |
-| `$type`             | string   | Typ des Lernelements                                                                                               | Ja        |
-| `elementId`         | int      | Eindeutige ID des Lernelements                                                                                     | Ja        |
-| `elementUUID`       | string   | Eindeutige UUID des Lernelements                                                                                   | Ja        |
-| `elementName`       | string   | Name des externen Lernelements                                                                                     | Ja        |
-| `elementCategory`   | string   | Kategorie des Lernelements (z.B. "text")                                                                           | Ja        |
-| `elementFileType`   | string   | Art des Dateityps des Lernelements                                                                                 | Ja        |
-
+| Schlüssel         | Datentyp | Funktion                                 | benötigt? |
+| ----------------- | -------- | ---------------------------------------- | --------- |
+| `$type`           | string   | Typ des Lernelements                     | Ja        |
+| `elementId`       | int      | Eindeutige ID des Lernelements           | Ja        |
+| `elementUUID`     | string   | Eindeutige UUID des Lernelements         | Ja        |
+| `elementName`     | string   | Name des externen Lernelements           | Ja        |
+| `elementCategory` | string   | Kategorie des Lernelements (z.B. "text") | Ja        |
+| `elementFileType` | string   | Art des Dateityps des Lernelements       | Ja        |
 
 ### Beschreibung der Felder der Welt
 
@@ -104,8 +103,8 @@ Die Namen von Schlüsseln, welche mehrere Werte (Arrays) beinhalten, sollen imme
 | spaceDescription         | string                    | Beschreibung des Spaces, welche dem Nutzer angezeigt wird                                                            | Nein      |
 | spaceGoals               | [string]                  | Einzelne Lernziele des Spaces                                                                                        | Nein      |
 | spaceSlotContents        | [int]                     | Die Lernelemente, welche sich in dem Raum befinden mit deren Slot (repräsentiert durch den Array index(null = leer)) | Ja        |
-| spaceTemplate             | string                    | Das Temapate, welches für das Modell des Raumes genutzt wird                                                         | Ja        |
-| spaceTemplateStyle        | string                    | Der Style des Templates, welcher genutzt werden soll                                                                 | Ja        |
+| spaceTemplate            | string                    | Das Temapate, welches für das Modell des Raumes genutzt wird                                                         | Ja        |
+| spaceTemplateStyle       | string                    | Der Style des Templates, welcher genutzt werden soll                                                                 | Ja        |
 
 ### Beschreibung der Felder des Elements
 
@@ -120,6 +119,7 @@ Die Namen von Schlüsseln, welche mehrere Werte (Arrays) beinhalten, sollen imme
 | elementMaxScore      | integer  | wie viele Punkte gibt das Element (maximal) gibt, wenn es abgeschlossen ist                  | Ja        |
 | elementName          | string   | Name des Elements                                                                            | Ja        |
 | elementModel         | string   | Modell, weklches zur Anzeige des Elements genutzt werden soll                                | Ja        |
+| spaceStory           | objekt   | Stellt die Story für einen Lernraum bereit.                                                  | Nein      |
 
 ### Beschreibung der Felder des Root Elements
 
@@ -130,6 +130,15 @@ Die Namen von Schlüsseln, welche mehrere Werte (Arrays) beinhalten, sollen imme
 | author      | string       | Autor der Lernwelt                       | Nein      |
 | language    | ["de", "en"] | Sprache der Lernwelt in Country Code ist | Nein      |
 | world       | objekt       | beinhaltet alle Daten der Lernwelt       | Ja        |
+
+### Beschreibung der Felder der Space
+
+| Schlüssel    | Datentyp | Funktion                                             | benötigt? |
+| ------------ | -------- | ---------------------------------------------------- | --------- |
+| intoStory    | objekt   | Story die beim betreten des Raumes abgespielt wird   | Nein      |
+| outroStory   | objekt   | Story die beim verlassen des Raumes abgespielt wird  | Nein      |
+| storyTexts   | [string] | Texte, aus welchen die Story besteht                 | Nein      |
+| elementModel | string   | Das Modell, welches für das Lernelement genutzt wird | Ja        |
 
 ## JSON Schema
 
@@ -180,10 +189,11 @@ In den Spalten "Style" befinden sich die möglichen Strings für das Feld **spac
 
 ## Changelog
 
-
 ## Version 0.5
+
 ### Changes to the World
- - **evaluationLink** An optional field for an evaluation link for a learning world has been added
+
+- **evaluationLink** An optional field for an evaluation link for a learning world has been added
 
 ### Version 0.4
 
@@ -214,10 +224,12 @@ In Version 0.4 werden Templates für Lernräume sowie für Lernelemente hinzugef
 - **"Learning" als prefix herausgestrichen** der übersicht halber wurde das Wort "Learning" weg rationalisiert
 
 # Breaking changes zu der undokumentierten Version
+
 ## Root Level
 
 - `fileVersion` wird zwingen benötigt
 - `learningWorld` heißt jetzt `world`
+
 ## World
 
 - `idNumber` existiert nicht mehr
@@ -228,6 +240,7 @@ In Version 0.4 werden Templates für Lernräume sowie für Lernelemente hinzugef
 - `topics` existiert nicht mehr
 - `learningWorldContent` existiert nicht mehr
 - `learningSpaces` heißt jetzt `spaces`
+
 ## Space
 
 - `identifier` heißt jetzt `lmsElementIdentifier` und hat andere werte
@@ -238,7 +251,6 @@ In Version 0.4 werden Templates für Lernräume sowie für Lernelemente hinzugef
 - `includedPoints` existiert nicht mehr
 - `requiredPoints` heißt jetzt `requiredPointsToComplete`
 - `requirements` heißt jetzt `requiredSpacesToEnter`
-
 
 ## Element
 
