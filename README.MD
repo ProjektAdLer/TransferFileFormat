@@ -1,12 +1,12 @@
-# Das AdLer World Transfer File (AWT)
+# Das AdLer World Transfer File (ATF)
 
 Das Dateiformat dient zum Austausch von Daten zwischen den 3 AdLer-Komponenten AMG, Backend und 3D-Frontend.
 
 ## Visualisierung
 
-![Visualisierung des AWT-Formats](./Diagram.svg)
+![Visualisierung des ATF-Formats](./Diagram.svg)
 
-Die Visualisierung stellt die Version 0.5 des AWT-Formats dar.
+Die Visualisierung stellt die Version 0.5 des ATF-Formats dar.
 
 ## Datenstruktur
 
@@ -16,12 +16,12 @@ Inhalten beschreibt.
 
 ## Versionierung
 
-Um sicherzustellen, dass die Komponenten ordnungsgemäß kommunizieren können, wird das AWT-File mit einer Versionsnummer versehen. Diese Versionsnummer wird
+Um sicherzustellen, dass die Komponenten ordnungsgemäß kommunizieren können, wird das ATF-File mit einer Versionsnummer versehen. Diese Versionsnummer wird
 auf dem Root-Level des JSON-Objekts gespeichert. Die Komponenten können nun überprüfen, ob sie mit der Version des Files umgehen können.
 
 ## Vorgeschichte
 
-Das AWT File wurde im laufe der Entwicklung des AdLer-System stetig weiterentwickelt. Allerdings wurden diese Entwicklungen nicht, oder nicht ausreichend Dokumentiert. Deshalb startet das AFT-Format mit der Versionsnummer 0.3. Alle vorherigen Änderungen sind nicht einzusehen und nicht im Changelog vorhanden.
+Das ATF File wurde im laufe der Entwicklung des AdLer-System stetig weiterentwickelt. Allerdings wurden diese Entwicklungen nicht, oder nicht ausreichend Dokumentiert. Deshalb startet das AFT-Format mit der Versionsnummer 0.3. Alle vorherigen Änderungen sind nicht einzusehen und nicht im Changelog vorhanden.
 
 ## Konventionen
 
@@ -125,7 +125,7 @@ Die Namen von Schlüsseln, welche mehrere Werte (Arrays) beinhalten, sollen imme
 
 | Schlüssel   | Datentyp     | Funktion                                 | benötigt? |
 | ----------- | ------------ | ---------------------------------------- | --------- |
-| fileVersion | string       | gibt die Version des AWT Files an        | Ja        |
+| fileVersion | string       | gibt die Version des ATF Files an        | Ja        |
 | amgVersion  | string       | gibt die Version des AMG Tools an        | Nein      |
 | author      | string       | Autor der Lernwelt                       | Nein      |
 | language    | ["de", "en"] | Sprache der Lernwelt in Country Code ist | Nein      |
