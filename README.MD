@@ -1,4 +1,4 @@
-# Das AdLer World Transfer File (ATF)
+# Das AdLer Transfer File (ATF)
 
 Das Dateiformat dient zum Austausch von Daten zwischen den 3 AdLer-Komponenten AMG, Backend und 3D-Frontend.
 
