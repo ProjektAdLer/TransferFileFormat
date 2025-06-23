@@ -1,0 +1,171 @@
+// This is a .jsonc file (JSON with Comments) - remove the c in the file extension and
+// remove the comments to make it a valid .json file.
+{
+  "$type": "ATF", // Types are not necessary for every object. But it helps consistency and readability if every object has one.
+  "fileVersion": "2.3.0", // Element difficulty and required time
+  "amgVersion": "X.X",
+  "author": "Peter",
+  "language": "de",
+  "world": {
+    "$type": "LearningWorld",
+    "worldName": "Name der Welt",
+    "worldDescription": "Beschreibung der Welt",
+    "worldGoals": ["Ziel 1", "Ziel 2"],
+    "evaluationLink": "http://example.com",
+    "theme": "casino",
+    "frameStory": {
+      "$type": "FrameStory",
+      "frameStoryIntro": "Hallo, ich bin der Frame Story Intro Text",
+      "frameStoryOutro": "Hallo, ich bin der Frame Story Outro Text"
+    },
+    "topics": [
+      {
+        "$type": "LearningTopic",
+        "topicId": 1,
+        "topicName": "A",
+        "topicContents": [1, 2]
+      }
+    ],
+    "spaces": [
+      {
+        "$type": "LearningSpace",
+        "spaceId": 1,
+        "spaceUuid": "12345678-1234-1234-1234-123456789012",
+        "spaceName": "Name des Lernraums",
+        "spaceDescription": "Beschreibung des Lernraums",
+        "spaceGoals": ["Ziel 1", "Ziel 2"],
+        "spaceSlotContents": [1, null, 2, 3, null, null],
+        "requiredPointsToComplete": 100,
+        "requiredSpacesToEnter": "(5)v((7)^(4))",
+        "spaceTemplate": "rectangle2x3",
+        "spaceTemplateStyle": "casino", 
+        "spaceStory": {
+          "$type": "SimpleSpaceStory",
+          // Can be null
+          "introStory": {
+            "$type": "SimpleSpaceStoryElement",
+            "storyTexts": ["BlaBla 1", "BlaBla 2"],
+            "elementModel": "StoryNpc",
+            "modelFacialExpression": "happy",
+            "storyNpcName": "Name des NPCs"
+          },
+          // Can be null
+          "outroStory": {
+            "$type": "SimpleSpaceStoryElement",
+            "storyTexts": ["BlaBla 1", "BlaBla 2"],
+            "elementModel": "StoryNpc",
+            "modelFacialExpression": "sad",
+            "storyNpcName": "Name des NPCs" 
+          }
+        }
+      }
+    ],
+    "elements": [
+      {
+        "$type": "LearningElement",
+        "elementId": 1,
+        "elementUuid": "12345678-1234-1234-1234-123456789012",
+        "elementName": "Name des Elements",
+        "elementDescription": "Beschreibung des Lernelements",
+        "elementGoals": ["Ziel 1", "Ziel 2"],
+        "elementCategory": "primitiveH5P",
+        "elementFileType": "image:png",
+        "elementMaxScore": 123,
+        "elementModel": "ArcadeMachine",
+        "elementEstimatedTimeMinutes": 5, // Das ist neu.
+        "elementDifficulty": 100 // 000 = easy, 100 = medium, 200 = hard kann beliebig (in absprache mit Philipp und Frontend) erweitert werden.
+      },
+      {
+        "$type": "AdaptivityElement",
+        "elementId": 2,
+        "elementUuid": "12345678-1234-1234-1234-123456789012",
+        "elementName": "The One and only Adaptivity Module",
+        "elementDescription": "Check: Hast du alles verstanden?",
+        "elementGoals": ["Unklarheiten klären", "Ziel 2"],
+        "elementCategory": "adaptivity",
+        "elementFileType": "adaptivity",
+        "elementMaxScore": 123,
+        "elementModel": "Adaptivity3DModel",
+        "adaptivityContent": {
+          "$type": "adaptivityContent",
+          "introText": "Liebe Studies, bla bla bla",
+          "adaptivityTasks": [
+            // Tasks = Aufgaben, Questions = Difficulty
+            {
+              "$type": "adaptivityTask",
+              "taskId": 1,
+              "taskUuid": "12345678-1234-1234-1234-123456789012", // Uuid
+              "taskName": "Aufgabe 1",
+              "optional": false,
+              "minimumRequiredDifficulty": 100, // 000 = easy, 100 = medium, 200 = hard  Feld ist optional
+              "adaptivityQuestions": [
+                {
+                  "$type": "adaptivityQuestion",
+                  "questionType": "singleResponse", // or "multipleResponse"
+                  "questionId": 1,
+                  "questionUuid": "12345678-1234-1234-1234-123456789012",
+                  "questionDifficulty": 100, // 000 = easy, 100 = medium, 200 = hard
+                  "questionText": "Was ist der Sinn des Lebens?",
+                  "adaptivityRules": [
+                    {
+                      "$type": "correctnessTrigger",
+                      "triggerId": 1,
+                      "triggerCondition": "correct",
+                      "adaptivityAction": {
+                        "$type": "CommentAction",
+                        "commentText": "Das war falsch, versuch doch mal besser nachzudenken!"
+                      }
+                    },
+                    {
+                      "$type": "correctnessTrigger",
+                      "triggerId": 1,
+                      "triggerCondition": "correct",
+                      "adaptivityAction": {
+                        "$type": "AdaptivityReferenceAction",
+                        "ElementId": 13,
+                        "hintText": null
+                      }
+                    },
+                    {
+                      "$type": "correctnessTrigger",
+                      "triggerId": 1,
+                      "triggerCondition": "correct",
+                      "adaptivityAction": {
+                        "$type": "AdaptivityContentReferenceAction",
+                        "ElementId": 1337,
+                        "hintText": "Das war falsch, versuch doch mal besser nachzudenken! Hier ist ein Lerninhalt, welcher dir dabei helfen kann."
+                      }
+                    }
+                  ],
+                  "choices": [
+                    // Hier ist die Stelle im Array wichtig. Damit werden die Antworten identifiziert.
+                    // Wenn also irgend welche arten von "Mixen/Shufflen" von Antworten existiern soll, findet das im Frontend statt
+                    // Hindergrund der fehlenden IDs ist es, dass es im LMS nicht möglich ist, ihnen eine ID zu geben und dort auch mit dem Index
+                    // gearbeitet wird.
+                    {
+                      "$type": "AdaptivityQuestionAnswer",
+                      "answerText": "42"
+                    },
+                    {
+                      "$type": "AdaptivityQuestionAnswer",
+                      "answerText": "Für AdLer zu arbeiten"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      },
+      // This is the "external" Learning Element. It is handled just like the normal ones but it is not part of the World and does not have Points
+      {
+        "$type": "BaseLearningElement",
+        "elementId": 666,
+        "elementUuid": "12345678-1234-1234-1234-123456789012",
+        "elementName": "Ich bims 1 externes Lernelement",
+        "elementCategory": "text",
+        "elementFileType": "text"
+      }
+    ]
+  }
+}

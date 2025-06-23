@@ -108,18 +108,20 @@ Die Namen von Schlüsseln, welche mehrere Werte (Arrays) beinhalten, sollen imme
 
 ### Beschreibung der Felder des Elements
 
-| Schlüssel            | Datentyp | Funktion                                                                                     | benötigt? |
-| -------------------- | -------- | -------------------------------------------------------------------------------------------- | --------- |
-| lmsElementIdentifier | objekt   | Objekt, welches durch Angabe von Typ und Wert ein Elementen im LMS eindeutig bezeichnen kann | Ja        |
-| elementId            | int      | id des Lernelements                                                                          | Ja        |
-| elementDescription   | string   | Beschreibung des Lernelements                                                                | Nein      |
-| elementGoals         | [string] | ziele des Lernelements                                                                       | Nein      |
-| elementCategory      | string   | Art des Lernelements (Bild, Text, H5P, etc)                                                  | Ja        |
-| elementFileType      | string   | genauer Content des Lernelements (im Falle Bild: Jpeg, PNG, ...)                             | Ja        |
-| elementMaxScore      | integer  | wie viele Punkte gibt das Element (maximal) gibt, wenn es abgeschlossen ist                  | Ja        |
-| elementName          | string   | Name des Elements                                                                            | Ja        |
-| elementModel         | string   | Modell, weklches zur Anzeige des Elements genutzt werden soll                                | Ja        |
-| spaceStory           | objekt   | Stellt die Story für einen Lernraum bereit.                                                  | Nein      |
+| Schlüssel                   | Datentyp | Funktion                                                                                     | benötigt? |
+| --------------------------- | -------- | -------------------------------------------------------------------------------------------- | --------- |
+| lmsElementIdentifier        | objekt   | Objekt, welches durch Angabe von Typ und Wert ein Elementen im LMS eindeutig bezeichnen kann | Ja        |
+| elementId                   | int      | id des Lernelements                                                                          | Ja        |
+| elementDescription          | string   | Beschreibung des Lernelements                                                                | Nein      |
+| elementGoals                | [string] | ziele des Lernelements                                                                       | Nein      |
+| elementCategory             | string   | Art des Lernelements (Bild, Text, H5P, etc)                                                  | Ja        |
+| elementFileType             | string   | genauer Content des Lernelements (im Falle Bild: Jpeg, PNG, ...)                             | Ja        |
+| elementMaxScore             | integer  | wie viele Punkte gibt das Element (maximal) gibt, wenn es abgeschlossen ist                  | Ja        |
+| elementName                 | string   | Name des Elements                                                                            | Ja        |
+| elementModel                | string   | Modell, weklches zur Anzeige des Elements genutzt werden soll                                | Ja        |
+| elementEstimatedTimeMinutes | integer  | Geschätzte Zeit in Minuten, die für die Bearbeitung des Lernelements benötigt wird           | Nein      |
+| elementDifficulty           | integer  | Schwierigkeitsgrad des Lernelements (000 = easy, 100 = medium, 200 = hard)                   | Nein      |
+| spaceStory                  | objekt   | Stellt die Story für einen Lernraum bereit.                                                  | Nein      |
 
 ### Beschreibung der Felder des Root Elements
 
@@ -188,6 +190,15 @@ In den Spalten "Style" befinden sich die möglichen Strings für das Feld **spac
 | "pdf"           | "pdfModel1"   |              |
 
 ## Changelog
+
+## Version 2.3.0
+
+### Element difficulty and required time
+
+#### Änderungen am LearningElement
+
+- **elementEstimatedTimeMinutes**: Geschätzte Zeit in Minuten, die für die Bearbeitung des Lernelements benötigt wird
+- **elementDifficulty**: Schwierigkeitsgrad des Lernelements (000 = easy, 100 = medium, 200 = hard). Der Wert kann beliebig erweitert werden (in Absprache mit Philipp und Frontend)
 
 ## Version 0.5
 
