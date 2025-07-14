@@ -81,6 +81,8 @@ Die Namen von Schlüsseln, welche mehrere Werte (Arrays) beinhalten, sollen imme
 | worldName            | string   | Name der Welt                                                                                | Ja        |
 | spaces               | [object] | Array aus Spaces, welche in der Welt vorhanden sind                                          | Ja        |
 | evaluationLink       | string   | Link für einen Evaluations-Link, sollte dieser in der Engine angezeigt werden                | Nein      |
+| evaluationLinkName   | string   | Name des Evaluations-Links                                                                   | Nein      |
+| evaluationLinkText   | string   | Text des Evaluations-Links                                                                   | Nein      |
 
 ### Beschreibung der Felder des Topics
 
@@ -135,12 +137,13 @@ Die Namen von Schlüsseln, welche mehrere Werte (Arrays) beinhalten, sollen imme
 
 ### Beschreibung der Felder der Space
 
-| Schlüssel    | Datentyp | Funktion                                             | benötigt? |
-| ------------ | -------- | ---------------------------------------------------- | --------- |
-| intoStory    | objekt   | Story die beim betreten des Raumes abgespielt wird   | Nein      |
-| outroStory   | objekt   | Story die beim verlassen des Raumes abgespielt wird  | Nein      |
-| storyTexts   | [string] | Texte, aus welchen die Story besteht                 | Nein      |
-| elementModel | string   | Das Modell, welches für das Lernelement genutzt wird | Ja        |
+| Schlüssel              | Datentyp | Funktion                                                                 | benötigt? |
+| ---------------------- | -------- | ------------------------------------------------------------------------ | --------- |
+| intoStory              | objekt   | Story die beim betreten des Raumes abgespielt wird                       | Nein      |
+| outroStory             | objekt   | Story die beim verlassen des Raumes abgespielt wird                      | Nein      |
+| storyTexts             | [string] | Texte, aus welchen die Story besteht                                     | Nein      |
+| elementModel           | string   | Das Modell, welches für das Lernelement genutzt wird                     | Ja        |
+| exitAfterStorySequence | boolean  | Wenn true, verlässt der Spieler den Raum nach dem Ende der Story-Sequenz | Nein      |
 
 ## JSON Schema
 
@@ -190,6 +193,19 @@ In den Spalten "Style" befinden sich die möglichen Strings für das Feld **spac
 | "pdf"           | "pdfModel1"   |              |
 
 ## Changelog
+
+## Version 2.4.0
+
+### Evaluation Text, Description and ExitAtStoryEnding
+
+#### Änderungen an der World
+
+- **evaluationLinkName**: Optionaler String für den Namen des Evaluations-Links
+- **evaluationLinkText**: Optionaler String für den Text des Evaluations-Links (existierte bereits in vorherigen Versionen)
+
+#### Änderungen an Story-Elementen
+
+- **exitAfterStorySequence**: Optionales boolean Feld für Story-Elemente. Wenn true, verlässt der Spieler den Raum nach dem Ende der Story-Sequenz
 
 ## Version 2.3.0
 
